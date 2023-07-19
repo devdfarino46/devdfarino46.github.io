@@ -1,0 +1,115 @@
+@font-face {
+	font-family: 'Angkor';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local(''),
+	url("../font/Angkor-Regular.woff2") format("woff2"),
+	url("../font/Angkor-Regular.woff") format("woff");
+}
+@font-face {
+	font-family: 'Crimsontext';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local(''),
+	url("../font/CrimsonText-Regular.woff2") format("woff2"),
+	url("../font/CrimsonText-Regular.woff") format("woff");
+}
+@font-face {
+	font-family: 'Futura';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local(''),
+	url("../font/Futura-Bold.woff2") format("woff2"),
+	url("../font/Futura-Bold.woff") format("woff");
+}
+@font-face {
+	font-family: 'Futura';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: local(''),
+	url("../font/futura-Medium.woff2") format("woff2"),
+	url("../font/futura-Medium.woff") format("woff");
+}
+@font-face {
+	font-family: 'Fuzzybubbles';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local(''),
+	url("../font/FuzzyBubbles-Bold.ttf");
+}
+@font-face {
+	font-family: 'Fuzzybubbles';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local(''),
+	url("../font/FuzzyBubbles-Regular.ttf");
+}
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local(''),
+	url("../font/Montserrat-Bold.woff2") format("woff2"),
+	url("../font/Montserrat-Bold.woff") format("woff");
+}
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local(''),
+	url("../font/Montserrat-ExtraBold.woff2") format("woff2"),
+	url("../font/Montserrat-ExtraBold.woff") format("woff");
+}
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: local(''),
+	url("../font/Montserrat-Medium.woff2") format("woff2"),
+	url("../font/Montserrat-Medium.woff") format("woff");
+}
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local(''),
+	url("../font/Montserrat-Regular.woff2") format("woff2"),
+	url("../font/Montserrat-Regular.woff") format("woff");
+}
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: local(''),
+	url("../font/Montserrat-SemiBold.woff2") format("woff2"),
+	url("../font/Montserrat-SemiBold.woff") format("woff");
+}
+@font-face {
+	font-family: 'Namu 1960';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local(''),
+	url("../font/NAMU-1960.woff2") format("woff2"),
+	url("../font/NAMU-1960.woff") format("woff");
+}
+@font-face {
+	font-family: 'Namu Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local(''),
+	url("../font/NAMU-Pro.woff2") format("woff2"),
+	url("../font/NAMU-Pro.woff") format("woff");
+}
