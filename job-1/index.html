@@ -40,9 +40,22 @@
           <div class="btn-ticket__bg"></div><span class="header__main-btn-label btn-ticket__label">Запуск <span>Бесплатно!</span></span></a></div>
       <div class="header__images-wrapper">
         <div class="header__image-wrapper-left header__image-wrapper">
-          <div class="_gradient gradient"></div><img class="header__image-left header__image" src="assets/img/header-image-left.webp" srcset="assets/img/header-image-left@2x.webp 2x" alt="" width="420" height="602">
+          <div class="_gradient gradient"></div>
+          <picture>
+            <source media="(max-width: 473px)" srcset="assets/img/header-image-left@138w.webp">
+            <source media="(max-width: 710px)" srcset="assets/img/header-image-left@200w.webp">
+            <source media="(max-width: 1645px)" srcset="assets/img/header-image-left@320w.webp">
+            <source media="(min-width: 1646px)" srcset="assets/img/header-image-left.webp"><img class="header__image-left header__image" src="assets/img/header-image-left.webp" alt="" width="420" height="602">
+          </picture>
         </div>
-        <div class="header__image-wrapper-right header__image-wrapper"><img class="header__image-right header__image" src="assets/img/header-image-right.webp" srcset="assets/img/header-image-right@2x.webp 2x" alt="" width="428" height="680"></div>
+        <div class="header__image-wrapper-right header__image-wrapper">
+          <picture>
+            <source media="(max-width: 473px)" srcset="assets/img/header-image-right@138w.webp">
+            <source media="(max-width: 710px)" srcset="assets/img/header-image-right@200w.webp">
+            <source media="(max-width: 1645px)" srcset="assets/img/header-image-right@328w.webp">
+            <source media="(min-width: 1646px)" srcset="assets/img/header-image-right.webp"><img class="header__image-right header__image" src="assets/img/header-image-right.webp" alt="" width="428" height="680">
+          </picture>
+        </div>
       </div>
     </header>
     <main class="page">
@@ -235,7 +248,15 @@
         <div class="records__container container anim-section">
           <h2 class="records__title page__subtitle">Время для новых рекордов в продажах!</h2>
           <div class="records-descr-wrapper">
-            <div class="records__images"><img src="assets/img/records-elipse.webp" alt="" width="545" height="546"><img src="assets/img/records-semielipse.svg" alt="" width="273" height="546"></div>
+            <div class="records__images">
+              <picture>
+                <source media="(max-width: 470px)" srcset="assets/img/records-elipse@170h.webp">
+                <source media="(max-width: 625px)" srcset="assets/img/records-elipse@250h.webp">
+                <source media="(max-width: 720px)" srcset="assets/img/records-elipse@300h.webp">
+                <source media="(max-width: 1575px)" srcset="assets/img/records-elipse@400h.webp">
+                <source media="(min-width: 1576px)" srcset="assets/img/records-elipse.webp"><img src="assets/img/records-elipse.webp" alt="" width="545" height="546">
+              </picture><img src="assets/img/records-semielipse.svg" alt="" width="273" height="546">
+            </div>
             <div class="records__descrs">
               <p class="records__descr page__subdescr text-show-anim _horizontal-reverse">Не упустите возможность превратить свой бизнес в процветающую империю! </p>
               <div class="records__play-btn-wrapper">
