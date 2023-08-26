@@ -2612,11 +2612,10 @@ body.modal-lock {
   line-height: 1.2;
   border: 1px solid var(--unnamed, #F5F5F5);
   padding: 18px 10px;
-}
-.table__cell span {
-  display: inline-flex;
-  align-items: center;
+  box-sizing: content-box;
   height: 2.4em;
+  display: flex;
+  align-items: center;
 }
 .table__cell._header {
   background: #252D32;
