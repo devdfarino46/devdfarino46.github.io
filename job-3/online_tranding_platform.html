@@ -47,42 +47,6 @@
     <!-- /Yandex.Metrika counter -->
 
     <meta name="google-site-verification" content="DKIUdn3QFoJvyTbFOxEweJ6kduMSnbMDgB23TDTROa4" />
-
-    <!-- Подключение хедера -->
-    <script>
-        var xhr= new XMLHttpRequest();
-        xhr.open('GET', 'header.html_', true);
-        xhr.onreadystatechange= function() {
-            if (this.readyState!==4) return;
-            if (this.status!==200) return; // or whatever error handling you want
-            document.getElementById('header').innerHTML= this.responseText;
-        };
-        xhr.send();
-    </script>
-
-    <!-- Подключение футера -->
-    <script>
-        var xhr= new XMLHttpRequest();
-        xhr.open('GET', 'footer.html_', true);
-        xhr.onreadystatechange= function() {
-            if (this.readyState!==4) return;
-            if (this.status!==200) return; // or whatever error handling you want
-            document.getElementById('footer').innerHTML= this.responseText;
-        };
-        xhr.send();
-    </script>
-
-    <!-- Подключение 2-го футера, который находится над первым -->
-    <script>
-        var xhr= new XMLHttpRequest();
-        xhr.open('GET', 'footer2.html_', true);
-        xhr.onreadystatechange= function() {
-            if (this.readyState!==4) return;
-            if (this.status!==200) return; // or whatever error handling you want
-            document.getElementById('footer2').innerHTML= this.responseText;
-        };
-        xhr.send();
-    </script>
 </head>
 
 
@@ -1389,6 +1353,44 @@
         </main>
 
         <div id="footer"></div>
+
+        
+
+        <!-- Подключение хедера -->
+        <script>
+            var xhr= new XMLHttpRequest();
+            xhr.open('GET', 'header.html_', true);
+            xhr.onreadystatechange= function() {
+                if (this.readyState!==4) return;
+                if (this.status!==200) return; // or whatever error handling you want
+                document.getElementById('header').innerHTML= this.responseText;
+            };
+            xhr.send();
+        </script>
+
+        <!-- Подключение футера -->
+        <script>
+            var xhr= new XMLHttpRequest();
+            xhr.open('GET', 'footer.html_', true);
+            xhr.onreadystatechange= function() {
+                if (this.readyState!==4) return;
+                if (this.status!==200) return; // or whatever error handling you want
+                document.getElementById('footer').innerHTML= this.responseText;
+            };
+            xhr.send();
+        </script>
+
+        <!-- Подключение 2-го футера, который находится над первым -->
+        <script>
+            var xhr= new XMLHttpRequest();
+            xhr.open('GET', 'footer2.html_', true);
+            xhr.onreadystatechange= function() {
+                if (this.readyState!==4) return;
+                if (this.status!==200) return; // or whatever error handling you want
+                document.getElementById('footer2').innerHTML= this.responseText;
+            };
+            xhr.send();
+        </script>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="js/app.min.js"></script>
