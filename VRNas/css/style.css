@@ -962,7 +962,6 @@ body {
 }
 .video__popup._visibled {
   display: flex;
-  opacity: 0;
 }
 
 .player-video {
@@ -1256,8 +1255,7 @@ body {
   width: max-content;
   padding: 18px 19px 13px 23px;
   background-color: rgba(37, 37, 50, 0.77);
-  -webkit-clip-path: polygon(0 50%, 11px 0, 100% 0, 100% 100%, 11px 100%, 0 50%);
-          clip-path: polygon(0 50%, 11px 0, 100% 0, 100% 100%, 11px 100%, 0 50%);
+  clip-path: polygon(0 50%, 11px 0, 100% 0, 100% 100%, 11px 100%, 0 50%);
 }
 @media (max-width: 620px) {
   .client-testimonial__content {
@@ -1270,8 +1268,7 @@ body {
   z-index: 1;
   content: "";
   background: var(--color-grey-linear);
-  -webkit-clip-path: polygon(0 50%, 11px 0, 100% 0, 100% 100%, 11px 100%, 0 50%, 1px 50%, 12px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 1px, 12px 1px, 1px 50%);
-          clip-path: polygon(0 50%, 11px 0, 100% 0, 100% 100%, 11px 100%, 0 50%, 1px 50%, 12px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 1px, 12px 1px, 1px 50%);
+  clip-path: polygon(0 50%, 11px 0, 100% 0, 100% 100%, 11px 100%, 0 50%, 1px 50%, 12px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 1px, 12px 1px, 1px 50%);
 }
 .client-testimonial__text {
   font-size: 12px;
@@ -1487,7 +1484,6 @@ body {
   max-height: 504px;
   overflow-y: auto;
   padding-bottom: 32px;
-  scroll-behavior: smooth;
 }
 @media (max-width: 1100px) {
   .recent-article__list {
@@ -2535,8 +2531,7 @@ body {
   transform: translateX(-50%);
 }
 .testimonial__image > img {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 94px), 0 calc(100% - 94px));
-          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 94px), 0 calc(100% - 94px));
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 94px), 0 calc(100% - 94px));
 }
 .testimonial__circles {
   position: absolute;
@@ -3048,8 +3043,7 @@ body {
   aspect-ratio: 707/555;
 }
 .partners__decor ._image > img {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70.4504504505%, 0 70.4504504505%);
-          clip-path: polygon(0 0, 100% 0, 100% 70.4504504505%, 0 70.4504504505%);
+  clip-path: polygon(0 0, 100% 0, 100% 70.4504504505%, 0 70.4504504505%);
 }
 .partners__decor ._image ._wrapper {
   position: absolute;
