@@ -29,8 +29,9 @@
       
     </style>
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/main.bundle.css">
-    <script defer src="assets/js/main.bundle.js"> </script>
+    <link rel="stylesheet" href="assets/css/fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"> </script>
   </head>
   <body>
     <div class="wrapper">
@@ -50,11 +51,7 @@
                 <path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="#1FB59C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M15.7128 15.1798L12.6128 13.3298C12.0728 13.0098 11.6328 12.2398 11.6328 11.6098V7.50977" stroke="#1FB59C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <p class="nav__work-info-text">
-                Пн-Пт: 10.00-21.00 <br>
-                Сб-Вс: 10.00-20.00
-                
-              </p>
+              <p class="nav__work-info-text"> <span>Пн-Пт: 10.00-21.00</span><i>/</i><span>Сб-Вс: 10.00-20.00</span></p>
             </div>
             <div class="nav__region">
                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,10 +61,10 @@
           </div>
         </div>
         <div class="header">
-          <div class="container"><a class="header__logo" href="#"><img src="assets/img/logo-black.svg" alt="" width="265" height="32"></a>
+          <div class="container"><a class="header__logo" href="index.html"><img src="assets/img/logo-black.svg" alt="" width="265" height="32"></a>
             <div class="header-search">
               <div class="header-search__back"></div>
-              <form class="search-input --small" action="javascript:;">
+              <form class="search-input --x-small" action="javascript:;">
                 <div class="search-input__input-wrap"><span class="search-input__icon"></span>
                   <input class="search-input__input" type="text" placeholder="Найти товар" name="search"><span class="search-input__clear"></span>
                 </div>
@@ -152,8 +149,11 @@
       <main class="page">
         <div class="hero" style="background-image: url(assets/img/hero-bg.webp);">
           <div class="container">
-            <h1 class="hero__title">Радиоуправляемые модели <br>и игрушки в магазине Copterdrone</h1><a class="btn --accent" href="#"> <span>Перейти в каталог</span></a>
+            <h1 class="hero__title">Радиоуправляемые модели <br>и игрушки в магазине Copterdrone</h1><a class="btn --accent" href="catalog.html"> <span>Перейти в каталог</span></a>
           </div>
+        </div>
+        <div class="hero-action">
+          <div class="container">Акция! Сезонная распродажа - скидки до 30% до 27 Октября *Квадрокоптеры *Машинки *Самолеты *Конструкторы</div>
         </div>
         <div class="catalog-header-relative">
           <div class="catalog-header">
@@ -180,36 +180,1149 @@
             </div>
           </div>
         </div>
-        <section class="promo-section container --h-padding-80">
-          <h2 style="display: none;">Преимущества</h2>
+        <div class="categories"> 
+          <div class="categories__container container">
+            <div class="categories__title-wrap">
+              <div class="categories__title">Категории</div>
+              <div class="categories__btns">
+                <button class="action-btn --medium categories__prev-btn" type="button" aria-label="Предыдущий слайд">
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.0901 20.0841L8.57009 13.5641C7.80009 12.7941 7.80009 11.5341 8.57009 10.7641L15.0901 4.24414" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button class="action-btn --medium categories__next-btn" type="button" aria-label="Предыдущий слайд">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.91016 19.9181L15.4302 13.3981C16.2002 12.6281 16.2002 11.3681 15.4302 10.5981L8.91016 4.07812" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="categories__items">
+              <div class="swiper">
+                <div class="swiper-wrapper"><a class="category-card swiper-slide" href="#" style="background-image: url('assets/img/category-cards/1.webp');"> <span>Радиоуправляемые квадрокоптеры</span></a><a class="category-card swiper-slide" href="#" style="background-image: url('assets/img/category-cards/1.webp');"> <span>Радиоуправляемые квадрокоптеры</span></a><a class="category-card swiper-slide" href="#" style="background-image: url('assets/img/category-cards/1.webp');"> <span>Радиоуправляемые квадрокоптеры</span></a><a class="category-card swiper-slide" href="#" style="background-image: url('assets/img/category-cards/1.webp');"> <span>Радиоуправляемые квадрокоптеры</span></a><a class="category-card swiper-slide" href="#" style="background-image: url('assets/img/category-cards/1.webp');"> <span>Радиоуправляемые квадрокоптеры</span></a><a class="category-card swiper-slide" href="#" style="background-image: url('assets/img/category-cards/1.webp');"> <span>Радиоуправляемые квадрокоптеры</span></a><a class="category-card swiper-slide" href="#" style="background-image: url('assets/img/category-cards/1.webp');"> <span>Радиоуправляемые квадрокоптеры</span></a><a class="category-card swiper-slide" href="#" style="background-image: url('assets/img/category-cards/1.webp');"> <span>Радиоуправляемые квадрокоптеры</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="home-products">
+          <div class="home-products__container container">
+            <h2 class="home-products__title">Популярные товары</h2>
+            <div class="home-products__list">
+              <div class="home-products__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card-info-tag">
+                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"/>
+                        </svg>Популярное
+                      </div>
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card-info-tag --accent">-40%</div>
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-products__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-products__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-products__load-more-btn btn --medium"><span>Смотреть все</span></div>
+          </div>
+        </section>
+        <section class="home-products">
+          <div class="home-products__container container">
+            <h2 class="home-products__title">Новинки</h2>
+            <div class="home-products__list">
+              <div class="home-products__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card-info-tag">
+                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"/>
+                        </svg>Популярное
+                      </div>
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card-info-tag --accent">-40%</div>
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-products__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-products__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-products__load-more-btn btn --medium"><span>Смотреть все</span></div>
+          </div>
+        </section>
+        <section class="home-products">
+          <div class="home-products__container container">
+            <h2 class="home-products__title">Товары по акции</h2>
+            <div class="home-products__list">
+              <div class="home-products__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card-info-tag">
+                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"/>
+                        </svg>Популярное
+                      </div>
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card-info-tag --accent">-40%</div>
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-products__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-products__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__images swiper">
+                        <div class="swiper-wrapper"><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/><img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy"/>
+                        </div>
+                      </div>
+                      <div class="product-card__pagination"><span></span> <span></span> <span></span></div><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+                      <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+                      <div class="product-card__price-wrap">
+                        <div class="product-card__price">121 550 ₽</div>
+                        <div class="product-card__price-old">435 000 ₽</div>
+                      </div>
+                      <div class="product-card__btns">
+                        <button class="btn --medium --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"/>
+                          </svg>
+                        </button>
+                        <button class="btn --medium --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-products__load-more-btn btn --medium"><span>Смотреть все</span></div>
+          </div>
+        </section>
+        <div class="promo-section container">
           <ul class="promo-section__items">
             <li>
               <div class="promo-block" style="background-image: url(assets/img/promo/promo-1.webp)">
-                <h3 class="promo-block__top">Топовый рейтинг</h3>
+                <h2 class="promo-block__top">Топовый рейтинг</h2>
                 <p class="promo-block__text">Магазин дронов<br>и игрушек №1 <br>в России</p>
               </div>
             </li>
             <li>
               <div class="promo-block --light" style="background-image: url(assets/img/promo/promo-2.webp)">
-                <h3 class="promo-block__top">Очень быстро</h3>
+                <h2 class="promo-block__top">Очень быстро</h2>
                 <p class="promo-block__text">Доставка <br>в день заказа</p>
               </div>
             </li>
             <li>
               <div class="promo-block" style="background-image: url(assets/img/promo/promo-3.webp)">
-                <h3 class="promo-block__top">Без рисков</h3>
+                <h2 class="promo-block__top">Без рисков</h2>
                 <p class="promo-block__text">31 день <br>на возврат</p>
               </div>
             </li>
             <li>
               <div class="promo-block --light" style="background-image: url(assets/img/promo/promo-4.webp)">
-                <h3 class="promo-block__top">Низкие цены</h3>
+                <h2 class="promo-block__top">Низкие цены</h2>
                 <p class="promo-block__text">На уровне <br>Яндекс Маркета</p>
               </div>
             </li>
           </ul>
+        </div>
+        <section class="feedback container">
+          <div class="feedback__wrapper" style="background-image: url(assets/img/copter-3d-logo.webp);">
+            <div class="feedback__left">
+              <h2 class="feedback__title">Есть вопросы?</h2>
+              <p class="feedback__text">Оставьте заявку и мы свяжемся с вами <br>в течении 10 минут</p>
+            </div>
+            <form class="feedback__form" action="javascript:;">
+              <div class="feedback__inputs">
+                <div class="input --medium">
+                  <input placeholder="Имя" type="text"><i></i>
+                </div>
+                <div class="input --medium">
+                  <input placeholder="Телефон" type="text"><i></i>
+                </div>
+              </div>
+              <button class="btn --accent --medium" type="submit"> <span>Хочу консультацию</span></button>
+              <label class="switch --medium"><i>
+                  <input type="checkbox"></i><span>Cогласие на обработку персональных данных</span></label>
+            </form>
+          </div>
         </section>
-        <section class="reviews container --h-padding-80">
+        <section class="reviews container">
           <div class="reviews__wrapper" style="background-image: url(assets/img/reviews-bg.webp);">
             <div class="reviews__content">
               <h2 class="reviews__title">CopterDrone – лидер по отзывам <br>и доверию покупателей</h2>
@@ -264,101 +1377,77 @@
             </div>
           </div>
         </section>
-        <section class="feedback container --h-padding-80">
-          <div class="feedback__wrapper" style="background-image: url(assets/img/copter-3d-logo.webp);">
-            <div class="feedback__left">
-              <h2 class="feedback__title">Есть вопросы?</h2>
-              <p class="feedback__text">Оставьте заявку и мы свяжемся с вами <br>в течении 10 минут</p>
+        <section class="news container">
+          <h2 class="section-title">Новости</h2>
+          <div class="news__slider-wrapper">
+            <button class="news__slide-prev action-btn" type="button" aria-label="Предыдущий слайд">
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.0901 20.0841L8.57009 13.5641C7.80009 12.7941 7.80009 11.5341 8.57009 10.7641L15.0901 4.24414" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="news__slide-next action-btn" type="button" aria-label="Следующий слайд">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.91016 19.9181L15.4302 13.3981C16.2002 12.6281 16.2002 11.3681 15.4302 10.5981L8.91016 4.07812" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="swiper">
+              <ul class="swiper-wrapper"> 
+                <li class="swiper-slide">
+                  <div class="blog-card"><img src="assets/img/blog/blog-1.webp" alt="Регистрация квадрокоптеров в России">
+                    <p class="blog-card__date">20.01.2026</p>
+                    <h3 class="blog-card__title">Регистрация квадрокоптеров в России</h3>
+                    <p class="blog-card__text">Регистрация квадрокоптеров в России ✓ Закон о квадрокоптерах ✓ Как поставить на учет ✓ Что нужно для Росавиации</p><a class="btn --accent --medium" href="#"> <span>Читать</span></a>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="blog-card"><img src="assets/img/blog/blog-2.webp" alt="Лицензирование операций с квадрокоптерами">
+                    <p class="blog-card__date">20.01.2026</p>
+                    <h3 class="blog-card__title">Лицензирование операций с квадрокоптерами</h3>
+                    <p class="blog-card__text">Лицензирование операций с квадрокоптерами ✓ Как получить лицензию ✓ Условия для получения ✓ Нормативные документы</p><a class="btn --accent --medium" href="#"> <span>Читать</span></a>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="blog-card"><img src="assets/img/blog/blog-3.webp" alt="Обучение пилотов квадрокоптеров">
+                    <p class="blog-card__date">20.01.2026</p>
+                    <h3 class="blog-card__title">Обучение пилотов квадрокоптеров</h3>
+                    <p class="blog-card__text">Обучение пилотов квадрокоптеров ✓ Курсы и сертификаты ✓ Требования к обучению ✓ Подготовка к экзаменам</p><a class="btn --accent --medium" href="#"> <span>Читать</span></a>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="blog-card"><img src="assets/img/blog/blog-4.webp" alt="Обзоры машинок на радиоуправлении">
+                    <p class="blog-card__date">20.01.2026</p>
+                    <h3 class="blog-card__title">Обзоры машинок на радиоуправлении</h3>
+                    <p class="blog-card__text">Лицензирование операций с квадрокоптерами ✓ Как получить лицензию ✓ Условия для получения ✓ Нормативные документы</p><a class="btn --accent --medium" href="#"> <span>Читать</span></a>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="blog-card"><img src="assets/img/blog/blog-1.webp" alt="Регистрация квадрокоптеров в России">
+                    <p class="blog-card__date">20.01.2026</p>
+                    <h3 class="blog-card__title">Регистрация квадрокоптеров в России</h3>
+                    <p class="blog-card__text">Регистрация квадрокоптеров в России ✓ Закон о квадрокоптерах ✓ Как поставить на учет ✓ Что нужно для Росавиации</p><a class="btn --accent --medium" href="#"> <span>Читать</span></a>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="blog-card"><img src="assets/img/blog/blog-1.webp" alt="Регистрация квадрокоптеров в России">
+                    <p class="blog-card__date">20.01.2026</p>
+                    <h3 class="blog-card__title">Регистрация квадрокоптеров в России</h3>
+                    <p class="blog-card__text">Регистрация квадрокоптеров в России ✓ Закон о квадрокоптерах ✓ Как поставить на учет ✓ Что нужно для Росавиации</p><a class="btn --accent --medium" href="#"> <span>Читать</span></a>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <form class="feedback__form" action="javascript:;">
-              <div class="feedback__inputs">
-                <div class="input">
-                  <input placeholder="Имя" type="text"><i></i>
-                </div>
-                <div class="input">
-                  <input placeholder="Телефон" type="text"><i></i>
-                </div>
-              </div>
-              <button class="btn --accent" type="submit"> <span>Хочу консультацию</span></button>
-              <label class="switch"><i>
-                  <input type="checkbox"></i><span>Cогласие на обработку персональных данных</span></label>
-            </form>
           </div>
         </section>
-        <section class="news container --h-padding-100">
-          <div class="news__title-wrapper">
-            <h2 class="section-title">Новости</h2>
-            <div class="news__slide-btns">
-              <button class="news__slide-prev action-btn" type="button" aria-label="Предыдущий слайд">
-                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15.0901 20.0841L8.57009 13.5641C7.80009 12.7941 7.80009 11.5341 8.57009 10.7641L15.0901 4.24414" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
-              <button class="news__slide-next action-btn" type="button" aria-label="Следующий слайд">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.91016 19.9181L15.4302 13.3981C16.2002 12.6281 16.2002 11.3681 15.4302 10.5981L8.91016 4.07812" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
-              </button>
-            </div>
-          </div>
-          <div class="swiper">
-            <ul class="swiper-wrapper"> 
-              <li class="swiper-slide">
-                <div class="blog-card"><img src="assets/img/blog/blog-1.webp" alt="Регистрация квадрокоптеров в России">
-                  <p class="blog-card__date">20.01.2026</p>
-                  <h3 class="blog-card__title">Регистрация квадрокоптеров в России</h3>
-                  <p class="blog-card__text">Регистрация квадрокоптеров в России ✓ Закон о квадрокоптерах ✓ Как поставить на учет ✓ Что нужно для Росавиации</p><a class="btn --accent --medium" href="#"> <span>Читать</span></a>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div class="blog-card"><img src="assets/img/blog/blog-2.webp" alt="Лицензирование операций с квадрокоптерами">
-                  <p class="blog-card__date">20.01.2026</p>
-                  <h3 class="blog-card__title">Лицензирование операций с квадрокоптерами</h3>
-                  <p class="blog-card__text">Лицензирование операций с квадрокоптерами ✓ Как получить лицензию ✓ Условия для получения ✓ Нормативные документы</p><a class="btn --accent --medium" href="#"> <span>Читать</span></a>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div class="blog-card"><img src="assets/img/blog/blog-3.webp" alt="Обучение пилотов квадрокоптеров">
-                  <p class="blog-card__date">20.01.2026</p>
-                  <h3 class="blog-card__title">Обучение пилотов квадрокоптеров</h3>
-                  <p class="blog-card__text">Обучение пилотов квадрокоптеров ✓ Курсы и сертификаты ✓ Требования к обучению ✓ Подготовка к экзаменам</p><a class="btn --accent --medium" href="#"> <span>Читать</span></a>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div class="blog-card"><img src="assets/img/blog/blog-4.webp" alt="Обзоры машинок на радиоуправлении">
-                  <p class="blog-card__date">20.01.2026</p>
-                  <h3 class="blog-card__title">Обзоры машинок на радиоуправлении</h3>
-                  <p class="blog-card__text">Лицензирование операций с квадрокоптерами ✓ Как получить лицензию ✓ Условия для получения ✓ Нормативные документы</p><a class="btn --accent --medium" href="#"> <span>Читать</span></a>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div class="blog-card"><img src="assets/img/blog/blog-1.webp" alt="Регистрация квадрокоптеров в России">
-                  <p class="blog-card__date">20.01.2026</p>
-                  <h3 class="blog-card__title">Регистрация квадрокоптеров в России</h3>
-                  <p class="blog-card__text">Регистрация квадрокоптеров в России ✓ Закон о квадрокоптерах ✓ Как поставить на учет ✓ Что нужно для Росавиации</p><a class="btn --accent --medium" href="#"> <span>Читать</span></a>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div class="blog-card"><img src="assets/img/blog/blog-1.webp" alt="Регистрация квадрокоптеров в России">
-                  <p class="blog-card__date">20.01.2026</p>
-                  <h3 class="blog-card__title">Регистрация квадрокоптеров в России</h3>
-                  <p class="blog-card__text">Регистрация квадрокоптеров в России ✓ Закон о квадрокоптерах ✓ Как поставить на учет ✓ Что нужно для Росавиации</p><a class="btn --accent --medium" href="#"> <span>Читать</span></a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="team container --h-padding-100">
+        <section class="team container">
           <div class="team__title-wrapper">
             <h2 class="section-title">Наша команда</h2>
             <div class="team__slide-btns">
-              <button class="team__slide-prev action-btn" type="button" aria-label="Предыдущий слайд">
+              <button class="team__slide-prev action-btn --medium" type="button" aria-label="Предыдущий слайд">
                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M15.0901 20.0841L8.57009 13.5641C7.80009 12.7941 7.80009 11.5341 8.57009 10.7641L15.0901 4.24414" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </button>
-              <button class="team__slide-next action-btn" type="button" aria-label="Следующий слайд">
+              <button class="team__slide-next action-btn --medium" type="button" aria-label="Следующий слайд">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.91016 19.9181L15.4302 13.3981C16.2002 12.6281 16.2002 11.3681 15.4302 10.5981L8.91016 4.07812" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -373,7 +1462,7 @@
                   <div class="person__content">
                     <h3 class="person__title">Андрей</h3>
                     <p class="person__descr">Руководитель компании Copterdrone</p>
-                    <button class="btn --accent" type="button"> <span>Задать вопрос</span></button>
+                    <button class="btn --medium" type="button"> <span>Задать вопрос</span></button>
                   </div>
                 </div>
               </li>
@@ -382,7 +1471,7 @@
                   <div class="person__content">
                     <h3 class="person__title">Владимир</h3>
                     <p class="person__descr">Ваш менеджер по продажам</p>
-                    <button class="btn --accent" type="button"> <span>Задать вопрос</span></button>
+                    <button class="btn --medium" type="button"> <span>Задать вопрос</span></button>
                   </div>
                 </div>
               </li>
@@ -391,7 +1480,7 @@
                   <div class="person__content">
                     <h3 class="person__title">Константин</h3>
                     <p class="person__descr">Отдел логистики</p>
-                    <button class="btn --accent" type="button"> <span>Задать вопрос</span></button>
+                    <button class="btn --medium" type="button"> <span>Задать вопрос</span></button>
                   </div>
                 </div>
               </li>
@@ -400,50 +1489,57 @@
                   <div class="person__content">
                     <h3 class="person__title">Арсений</h3>
                     <p class="person__descr">Отдел тех. поддержки</p>
-                    <button class="btn --accent" type="button"> <span>Задать вопрос</span></button>
+                    <button class="btn --medium" type="button"> <span>Задать вопрос</span></button>
                   </div>
                 </div>
               </li>
             </ul>
           </div>
         </section>
-        <section class="about container --h-padding-80">
+        <section class="about container">
           <h2 class="section-title">Интернет-магазин CopterDrone </h2>
           <div class="about__content">
-            <h3>О нас:</h3>
-            <p>
-              У нас вы найдете большой выбор радиоуправляемой техники по приятным ценам. <br>
-              В наличии как любительские, так и профессиональные модели.
-            </p>
-            <hr>
+            <div class="about-row">
+              <div class="about-col">
+                <h3>О нас:</h3>
+                <p>
+                  У нас вы найдете большой выбор радиоуправляемой техники по приятным ценам. <br>
+                  В наличии как любительские, так и профессиональные модели.
+                </p>
+              </div>
             
-            <h3>Только начинаете?</h3>
-            <p>
-              Обратите внимание на коптеры Syma — простые в управлении, с удобным пультом и режимом Headless Mode. <br>
-              Отличный выбор для первого полета. <br>
-              → Рекомендуем модель X5SW.
-            </p>
-            <hr>
+              <div class="about-col">
+                <h3>Только начинаете?</h3>
+                <p>
+                  Обратите внимание на коптеры Syma — простые в управлении, с удобным пультом и режимом Headless Mode. <br>
+                  Отличный выбор для первого полета. <br>
+                  → Рекомендуем модель X5SW.
+                </p>
+              </div>
+            </div>
+            <div class="about-row">
+              <div class="about-col">
+                <h3>Хотите снимать с высоты?</h3>
+                <p>Для воздушной видеосъёмки подойдут дроны с камерой:</p>
+                <ul>
+                  <li>Квадрокоптеры DJI снимают в 4K</li>
+                  <li>Отличная стабилизация</li>
+                  <li>Режимы следования, управление жестами, подвес камеры</li>
+                </ul>
+                <br>
+                <p><b>Ваша модель Phantom 4: фото 12 МП, плавная картинка без рывков</b></p>
+              </div>
             
-            <h3>Хотите снимать с высоты?</h3>
-            <p>Для воздушной видеосъёмки подойдут дроны с камерой:</p>
-            <ul>
-              <li>Квадрокоптеры DJI снимают в 4K</li>
-              <li>Отличная стабилизация</li>
-              <li>Режимы следования, управление жестами, подвес камеры</li>
-            </ul>
-            <br>
-            <p><b>Ваша модель Phantom 4: фото 12 МП, плавная картинка без рывков</b></p>
-            <hr>
-            
-            <h3>Для фанатов скорости:</h3>
-            <p>Гоночные квадрокоптеры — маленькие, быстрые и маневренные:</p>
-            <ul>
-              <li>Функция FPV (First Person View) - она транслирует видео с камеры на смартфон или специальные FPV очки.</li>
-              <li>Видео на смартфоне или в очках</li>
-              <li>Приложения с телеметрией и настройками камеры</li>
-            </ul>
-            <hr>
+              <div class="about-col">
+                <h3>Для фанатов скорости:</h3>
+                <p>Гоночные квадрокоптеры — маленькие, быстрые и маневренные:</p>
+                <ul>
+                  <li>Функция FPV (First Person View) - она транслирует видео с камеры на смартфон или специальные FPV очки.</li>
+                  <li>Видео на смартфоне или в очках</li>
+                  <li>Приложения с телеметрией и настройками камеры</li>
+                </ul>
+              </div>
+            </div>
             
             <h3>Почему выбирают CopterDrone:</h3>
             <ul class="about-promo-list">
@@ -561,6 +1657,7 @@
             </div>
           </div>
           <div class="footer__bottom">
+            <p class="footer__copyright">© 2014-2023 Copter Drone. Все права защищены.<br>Данный сайт носит информационный характер и не является публичной офертой.<br><a href="#">Политика конфиденциальности</a><br><a href="#">Карта сайта</a></p>
             <div class="footer__socials"><a class="social-icon" href="#" title="Telegram">
                 <svg width="45" height="44" viewBox="0 0 45 44" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.4453 0C34.5956 0 44.4453 9.84974 44.4453 22C44.4453 34.1503 34.5956 44 22.4453 44C10.295 44 0.445312 34.1503 0.445312 22C0.445312 9.84974 10.295 0 22.4453 0ZM33.3984 14.3984C33.238 13.0492 31.6019 13.346 30.6914 13.6494C26.0116 15.4301 21.3784 17.3426 16.7637 19.2891C14.4166 20.3289 11.9253 21.3641 9.61621 22.5557L8.63867 23.0762C7.38559 23.9936 9.51549 24.6004 10.9688 25.2021C12.5894 25.7002 14.4792 26.4626 16.1006 25.5703C19.2751 23.7467 22.2126 21.5447 25.2236 19.4697C25.7716 19.1191 27.4334 17.9752 26.8711 19.333C24.7867 21.6124 22.4542 23.4537 20.2549 25.6211C19.4836 26.2477 18.6823 27.5083 19.5459 28.3857C22.1822 30.2313 24.8735 32.0176 27.5439 33.8213C28.6551 34.7082 30.3914 33.9907 30.6357 32.6045C31.3448 28.4426 32.0721 24.2811 32.7012 20.1055C32.949 18.2069 33.3105 16.3082 33.3984 14.3984Z"/>
@@ -583,7 +1680,6 @@
                   <path d="M29.1045 0.90918C41.4319 0.90918 44.3516 3.82782 44.3516 16.1553V29.6621C44.3516 41.9896 41.4319 44.9092 29.1045 44.9092H15.5977C3.27021 44.9092 0.351562 41.9896 0.351562 29.6621V16.1553C0.351562 3.82782 3.27021 0.90918 15.5977 0.90918H29.1045ZM8.82812 14.8506C7.8969 14.8506 7.74129 15.2854 7.74121 15.751C7.74121 16.5894 8.82814 20.8131 12.8027 26.4023C15.4421 30.2215 19.1994 32.2705 22.584 32.2705C24.6334 32.2705 24.8818 31.8046 24.8818 31.0283V28.1406C24.8819 27.2093 25.0687 27.0537 25.7207 27.0537C26.1866 27.0539 27.0254 27.3033 28.9189 29.1348C31.0923 31.3082 31.4648 32.3018 32.6758 32.3018H35.874C36.8055 32.3018 37.2406 31.836 36.9922 30.9355C36.7127 30.0351 35.6563 28.7313 34.29 27.1787C33.545 26.3095 32.4278 25.3467 32.0859 24.8809C31.6202 24.2598 31.7444 24.0111 32.0859 23.4521C32.0549 23.4521 35.9674 17.9246 36.3711 16.0615C36.5883 15.3786 36.3706 14.8818 35.4082 14.8818H32.21C31.4027 14.8819 31.0299 15.3165 30.8125 15.7822C30.8125 15.7822 29.1669 19.7567 26.8691 22.334C26.1241 23.0791 25.7825 23.328 25.3789 23.3281C25.1616 23.3281 24.8819 23.0795 24.8818 22.3965V16.0312C24.8818 15.2239 24.6333 14.8506 23.9502 14.8506H18.9199C18.4233 14.8506 18.1125 15.2232 18.1123 15.5957C18.1123 16.372 19.2615 16.5588 19.3857 18.7324V23.4521C19.3857 24.4767 19.1995 24.663 18.7959 24.6631C17.7091 24.6631 15.07 20.6573 13.4863 16.0928C13.1758 15.1923 12.8649 14.8506 12.0576 14.8506H8.82812Z"/>
                 </svg>
                 </a></div>
-            <p class="footer__copyright">© 2014-2023 Copter Drone. Все права защищены.<br>Данный сайт носит информационный характер и не является публичной офертой.</p>
           </div><a class="footer__logo" title="На главную" href="index.html"><img src="assets/img/logo-black.svg" alt="CORTERDRONE" width="369" height="44"></a>
         </div>
       </footer>
@@ -942,6 +2038,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="tooltip">
+        <div class="tooltip__content"></div>
       </div>
     </div>
   </body>
