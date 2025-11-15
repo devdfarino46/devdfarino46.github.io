@@ -166,7 +166,319 @@
 </div>
   <div class="catalog-main container">
   <div class="catalog-main__tabs"><a class="--active" href="#">Для взрослых</a><a href="#">Детские</a><a href="#">Большие</a><a href="#">Мини</a><a href="#">Для детей постраше</a></div>
-  <div class="filters"></div>
+  <div class="filters">
+  <div class="filter-range" data-min="1500" data-max="54000">
+    <div class="filter-range__label">Цена</div>
+    <div class="filter-range__inputs">
+      <label class="filter-range__input-min"><span>От</span>
+        <input type="text" name="price_min" value="10 000"><span>₽</span>
+      </label>
+      <label class="filter-range__input-max"><span>До</span>
+        <input type="text" name="price_max" value="40 000"><span>₽</span>
+      </label>
+    </div>
+    <div class="filter-range__range"></div>
+  </div>
+
+  <hr>
+
+  <label class="filter-select">
+    <span class="filter-select__label">В наличии</span>
+    <span class="switch"><i><input type="checkbox" checked></i></span>
+  </label>
+
+  <hr>
+
+  <div class="filter-checkboxes">
+    <div class="filter-checkboxes__label">Бренды:</div>
+    <div class="filter-checkboxes__dropdown">
+      <label class="filter-checkboxes__search input --xsmall --search">
+        <input type="text" placeholder="Поиск"> <i></i>
+      </label>
+      <div class="filter-checkboxes__inputs">
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="Сравнить"></i>
+          <span>Сравнить</span>
+        </label>
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="Hubsan"></i>
+          <span>Hubsan</span>
+        </label>
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="MJX"></i>
+          <span>MJX</span>
+        </label>
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="DJI"></i>
+          <span>DJI</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="1"></i>
+          <span>1</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="2"></i>
+          <span>2</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="3"></i>
+          <span>3</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="4"></i>
+          <span>4</span>
+        </label>
+      </div>
+      <div class="filter-checkboxes__show-all" data-show-text="Посмотреть все" data-hide-text="Скрыть">Посмотреть все</div>
+    </div>
+  </div>
+
+  <label class="filter-select">
+    <span class="filter-select__label">Только со скидкой</span>
+    <span class="switch"><i><input type="checkbox"></i></span>
+  </label>
+
+  <hr>
+
+  <div class="filter-checkboxes">
+    <div class="filter-checkboxes__label">По классу:</div>
+    <div class="filter-checkboxes__dropdown">
+      <div class="filter-checkboxes__inputs">
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="Монстры"></i>
+          <span>Монстры</span>
+        </label>
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="Шорт корс траки"></i>
+          <span>Шорт корс траки</span>
+        </label>
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="Краулеры"></i>
+          <span>Краулеры</span>
+        </label>
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="Трагги"></i>
+          <span>Трагги</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="1"></i>
+          <span>1</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="2"></i>
+          <span>2</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="3"></i>
+          <span>3</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="4"></i>
+          <span>4</span>
+        </label>
+      </div>
+      <div class="filter-checkboxes__show-all" data-show-text="Посмотреть все" data-hide-text="Скрыть">Посмотреть все</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="filter-checkboxes">
+    <div class="filter-checkboxes__label">Тип мотора:</div>
+    <div class="filter-checkboxes__dropdown">
+      <div class="filter-checkboxes__inputs">
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="Коллекторный"></i>
+          <span>Коллекторный</span>
+        </label>
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="Бесколлекторный"></i>
+          <span>Бесколлекторный</span>
+        </label>
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="ДВС"></i>
+          <span>ДВС</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="Коллекторный"></i>
+          <span>Коллекторный</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="Бесколлекторный"></i>
+          <span>Бесколлекторный</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="ДВС"></i>
+          <span>ДВС</span>
+        </label>
+      </div>
+      <div class="filter-checkboxes__show-all" data-show-text="Посмотреть все" data-hide-text="Скрыть">Посмотреть все</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="filter-range" data-min="3" data-max="32000">
+    <div class="filter-range__label">Дальность полета, м</div>
+    <div class="filter-range__inputs">
+      <label class="filter-range__input-min"><span>От</span>
+        <input type="text" name="price_min" value="3"><span>м</span>
+      </label>
+      <label class="filter-range__input-max"><span>До</span>
+        <input type="text" name="price_max" value="32 000"><span>м</span>
+      </label>
+    </div>
+    <div class="filter-range__range"></div>
+  </div>
+
+  <hr>
+  
+  <div class="filter-range" data-min="3" data-max="600">
+    <div class="filter-range__label">Время работы, мин</div>
+    <div class="filter-range__inputs">
+      <label class="filter-range__input-min"><span>От</span>
+        <input type="text" name="price_min" value="3"><span>мин</span>
+      </label>
+      <label class="filter-range__input-max"><span>До</span>
+        <input type="text" name="price_max" value="600"><span>мин</span>
+      </label>
+    </div>
+    <div class="filter-range__range"></div>
+  </div>
+
+  <hr>
+
+  <div class="filter-checkboxes">
+    <div class="filter-checkboxes__label">Камера:</div>
+    <div class="filter-checkboxes__dropdown">
+      <div class="filter-checkboxes__inputs">
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="Встроенная"></i>
+          <span>Встроенная</span>
+        </label>
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="В комплекте"></i>
+          <span>В комплекте</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="Приобретается отдельно"></i>
+          <span>Приобретается отдельно</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="Встроенная"></i>
+          <span>Встроенная</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="В комплекте"></i>
+          <span>В комплекте</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="Приобретается отдельно"></i>
+          <span>Приобретается отдельно</span>
+        </label>
+      </div>
+      <div class="filter-checkboxes__show-all" data-show-text="Посмотреть все" data-hide-text="Скрыть">Посмотреть все</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="filter-colors">
+    <div class="filter-colors__label">Цвет</div>
+    <div class="filter-colors__inputs">
+      <label class="filter-colors__input" style="background-color: #FFFFFF;">
+        <input type="checkbox" value="">
+      </label>
+      <label class="filter-colors__input" style="background-color: #000000;">
+        <input type="checkbox" value="">
+      </label>
+      <label class="filter-colors__input" style="background-color: #1FB59C;">
+        <input type="checkbox" value="">
+      </label>
+      <label class="filter-colors__input" style="background-color: #FE7024;">
+        <input type="checkbox" value="">
+      </label>
+      <label class="filter-colors__input" style="background-color: #FF3300;">
+        <input type="checkbox" value="">
+      </label>
+      <label class="filter-colors__input" style="background-color: #51FF00;">
+        <input type="checkbox" value="">
+      </label>
+    </div>
+  </div>
+
+  <div class="filter-checkboxes">
+    <div class="filter-checkboxes__label">Разрешение камеры:</div>
+    <div class="filter-checkboxes__dropdown">
+      <div class="filter-checkboxes__inputs">
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="0.3 Мпикс"></i>
+          <span>0.3 Мпикс</span>
+        </label>
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="2.0 Мпикс"></i>
+          <span>2.0 Мпикс</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="2.5 Мпикс"></i>
+          <span>2.5 Мпикс</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="3.0 Мпикс"></i>
+          <span>3.0 Мпикс</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="В комплекте"></i>
+          <span>В комплекте</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="Приобретается отдельно"></i>
+          <span>Приобретается отдельно</span>
+        </label>
+      </div>
+      <div class="filter-checkboxes__show-all" data-show-text="Посмотреть все" data-hide-text="Скрыть">Посмотреть все</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="filter-checkboxes">
+    <div class="filter-checkboxes__label">Питание радиоуправляемой модели:</div>
+    <div class="filter-checkboxes__dropdown">
+      <div class="filter-checkboxes__inputs">
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="Сменный аккумулятор"></i>
+          <span>Сменный аккумулятор</span>
+        </label>
+        <label class="checkbox --medium">
+          <i><input type="checkbox" value="Сменная батарея"></i>
+          <span>Сменная батарея</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="Встроенный аккумулятор"></i>
+          <span>Встроенный аккумулятор</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="От сети 220В"></i>
+          <span>От сети 220В</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="В комплекте"></i>
+          <span>В комплекте</span>
+        </label>
+        <label class="checkbox --medium --hide">
+          <i><input type="checkbox" value="Приобретается отдельно"></i>
+          <span>Приобретается отдельно</span>
+        </label>
+      </div>
+      <div class="filter-checkboxes__show-all" data-show-text="Посмотреть все" data-hide-text="Скрыть">Посмотреть все</div>
+    </div>
+  </div>
+
+  <button type="submit" class="btn --small">
+    <span>Применить</span>
+  </button>
+</div>
   <div class="catalog-main__products-top">
     <div class="catalog-main__selects">
       <div class="select">
@@ -227,9 +539,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -261,9 +573,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -295,9 +607,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -329,9 +641,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -363,9 +675,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -397,9 +709,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -431,9 +743,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -465,9 +777,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -499,9 +811,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -533,9 +845,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -567,9 +879,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -601,9 +913,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -635,9 +947,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -669,9 +981,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -703,9 +1015,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -737,9 +1049,9 @@
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
-          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
       </div>
       <div class="product-card__images-btns">
         <div class="product-card__favorite-btn" title="В избранное"></div>
@@ -1017,7 +1329,7 @@
     </div>
     <div class="basket-preview__cards">
       <div class="basket-prew-card" data-instock="12">
-        <div class="basket-prew-card__image-wrapper"><img src="assets/img/product-cards/drone.webp" alt="" loading="lazy" width="80" height="80"></div>
+        <div class="basket-prew-card__image-wrapper"><img src="assets/img/product-cards/drone.webp" alt="" decoding="async" loading="lazy" width="80" height="80"></div>
         <div class="basket-prew-card__title">1. Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2)</div>
         <div class="basket-prew-card__count">
           <div class="basket-prew-card__count-minus" title="Минус"></div>
@@ -1031,7 +1343,7 @@
         </div>
       </div>
       <div class="basket-prew-card" data-instock="12">
-        <div class="basket-prew-card__image-wrapper"><img src="assets/img/product-cards/drone.webp" alt="" loading="lazy" width="80" height="80"></div>
+        <div class="basket-prew-card__image-wrapper"><img src="assets/img/product-cards/drone.webp" alt="" decoding="async" loading="lazy" width="80" height="80"></div>
         <div class="basket-prew-card__title">2. Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2)</div>
         <div class="basket-prew-card__count">
           <div class="basket-prew-card__count-minus" title="Минус"></div>
@@ -1052,13 +1364,13 @@
     </div>
     <div class="basket-preview__cards-nostock">
       <div class="basket-prew-card-nostock">
-        <div class="basket-prew-card-nostock__image"><img src="assets/img/product-cards/drone.webp" alt=""></div>
+        <div class="basket-prew-card-nostock__image"><img src="assets/img/product-cards/drone.webp" loading="lazy" decoding="async" alt=""></div>
         <div class="basket-prew-card-nostock__title">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2)</div>
         <div class="basket-prew-card-nostock__note">Товар закончился</div>
         <button class="basket-prew-card-nostock__btn btn --ghost --xsmall" type="button">Сообщить о постпулении</button>
       </div>
       <div class="basket-prew-card-nostock">
-        <div class="basket-prew-card-nostock__image"><img src="assets/img/product-cards/drone.webp" alt=""></div>
+        <div class="basket-prew-card-nostock__image"><img src="assets/img/product-cards/drone.webp" loading="lazy" decoding="async" alt=""></div>
         <div class="basket-prew-card-nostock__title">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2)</div>
         <div class="basket-prew-card-nostock__note">Товар закончился</div>
         <button class="basket-prew-card-nostock__btn btn --ghost --xsmall" type="button">Сообщить о постпулении</button>
@@ -1313,5 +1625,9 @@
       <div class="tooltip" aria-hidden="true">
   <div class="tooltip__content"></div>
 </div>
+
+      <div class="close-filters-btn">
+        Закрыть фильтры
+      </div>
     </div>
   </body></html>
