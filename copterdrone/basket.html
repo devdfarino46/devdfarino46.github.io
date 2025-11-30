@@ -8,12 +8,15 @@
   
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/fancybox.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script defer src="js/main.js"> </script>
+  <link rel="stylesheet" href="css/main.css?v=20">
+  <script defer src="js/main.js?v=20"></script>
 <style>@font-face{display:swap;font-family:Geologica;font-stretch:100%;font-style:normal;font-weight:100 900;src:url(assets/fonts/Geologica-Var.woff2) format("woff2"),url(assets/fonts/Geologica-Var.ttf) format("opentype")}@font-face{display:swap;font-family:Rubik;font-stretch:100%;font-style:normal;font-weight:100 900;src:url(assets/fonts/Rubik-Var.woff2) format("woff2"),url(assets/fonts/Rubik-Var.ttf) format("opentype")}
 </style></head>
   <body>
     <div class="wrapper">
+      <div class="container container-relative-wrapper">
+        <div class="container-relative"></div>
+      </div>
       <header>
         <div class="nav">
   <div class="nav__container container">
@@ -47,7 +50,21 @@
     <a class="header__logo" href="pages.html">
       <img src="assets/img/logo-black.svg" alt="" width="265" height="32">
     </a>
-    <div class="header-search">
+    <div class="header__search-wrapper">
+      <button class="catalog-preview-btn" type="button">
+        <span>Каталог</span>
+        <div class="catalog-preview-btn__icon">
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.44531 6.5C3.44531 6.08579 3.7811 5.75 4.19531 5.75H20.6953C21.1095 5.75 21.4453 6.08579 21.4453 6.5C21.4453 6.91421 21.1095 7.25 20.6953 7.25H4.19531C3.7811 7.25 3.44531 6.91421 3.44531 6.5Z" fill="currentColor"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.44531 12C3.44531 11.5858 3.7811 11.25 4.19531 11.25H20.6953C21.1095 11.25 21.4453 11.5858 21.4453 12C21.4453 12.4142 21.1095 12.75 20.6953 12.75H4.19531C3.7811 12.75 3.44531 12.4142 3.44531 12Z" fill="currentColor"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.44531 17.5C3.44531 17.0858 3.7811 16.75 4.19531 16.75H20.6953C21.1095 16.75 21.4453 17.0858 21.4453 17.5C21.4453 17.9142 21.1095 18.25 20.6953 18.25H4.19531C3.7811 18.25 3.44531 17.9142 3.44531 17.5Z" fill="currentColor"></path>
+          </svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0937 5.63665C17.4452 5.28518 18.0156 5.28518 18.3671 5.63665C18.7182 5.98798 18.7181 6.55767 18.3671 6.90911L13.2753 11.9999L18.3671 17.0917C18.7184 17.4432 18.7185 18.0137 18.3671 18.3652C18.0157 18.7166 17.4452 18.7165 17.0937 18.3652L12.0019 13.2734L6.91106 18.3652C6.55962 18.7161 5.98994 18.7163 5.6386 18.3652C5.28713 18.0137 5.28713 17.4432 5.6386 17.0917L10.7294 11.9999L5.6386 6.90911C5.28741 6.55762 5.28722 5.98803 5.6386 5.63665C5.98998 5.28527 6.55957 5.28545 6.91106 5.63665L12.0019 10.7275L17.0937 5.63665Z" fill="currentColor"></path>
+          </svg>
+        </div>
+      </button>
+      <div class="header-search">
   <div class="header-search__back"></div>
   <form class="search-input --x-small" action="javascript:;">
     <div class="search-input__input-wrap"><span class="search-input__icon"></span>
@@ -82,6 +99,7 @@
     </ul>
   </div>
 </div>
+    </div>
     <div class="header__contacts">
       <div class="header__region">
          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,11 +126,7 @@
 </svg>
       </div>
       <div class="cta-icon menu-btn">
-        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.44531 6.5C3.44531 6.08579 3.7811 5.75 4.19531 5.75H20.6953C21.1095 5.75 21.4453 6.08579 21.4453 6.5C21.4453 6.91421 21.1095 7.25 20.6953 7.25H4.19531C3.7811 7.25 3.44531 6.91421 3.44531 6.5Z" fill="currentColor"></path>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.44531 12C3.44531 11.5858 3.7811 11.25 4.19531 11.25H20.6953C21.1095 11.25 21.4453 11.5858 21.4453 12C21.4453 12.4142 21.1095 12.75 20.6953 12.75H4.19531C3.7811 12.75 3.44531 12.4142 3.44531 12Z" fill="currentColor"></path>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.44531 17.5C3.44531 17.0858 3.7811 16.75 4.19531 16.75H20.6953C21.1095 16.75 21.4453 17.0858 21.4453 17.5C21.4453 17.9142 21.1095 18.25 20.6953 18.25H4.19531C3.7811 18.25 3.44531 17.9142 3.44531 17.5Z" fill="currentColor"></path>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"></path></svg>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0937 5.63665C17.4452 5.28518 18.0156 5.28518 18.3671 5.63665C18.7182 5.98798 18.7181 6.55767 18.3671 6.90911L13.2753 11.9999L18.3671 17.0917C18.7184 17.4432 18.7185 18.0137 18.3671 18.3652C18.0157 18.7166 17.4452 18.7165 17.0937 18.3652L12.0019 13.2734L6.91106 18.3652C6.55962 18.7161 5.98994 18.7163 5.6386 18.3652C5.28713 18.0137 5.28713 17.4432 5.6386 17.0917L10.7294 11.9999L5.6386 6.90911C5.28741 6.55762 5.28722 5.98803 5.6386 5.63665C5.98998 5.28527 6.55957 5.28545 6.91106 5.63665L12.0019 10.7275L17.0937 5.63665Z" fill="currentColor"></path>
         </svg>
@@ -397,7 +411,7 @@
   <div class="home-products__container container">
     <h2 class="home-products__title">Ваше Избранное</h2>
     <div class="home-products__list">
-      <div class="product-card">
+      <div class="product-card ">
   
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
@@ -418,9 +432,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -431,7 +445,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
@@ -452,9 +466,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -465,7 +479,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
@@ -486,9 +500,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -499,7 +513,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
@@ -520,9 +534,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -533,7 +547,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
@@ -554,9 +568,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -567,7 +581,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
@@ -588,9 +602,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -601,7 +615,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
@@ -622,9 +636,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -635,7 +649,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
@@ -656,9 +670,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -669,7 +683,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
@@ -690,9 +704,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -703,7 +717,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
@@ -724,9 +738,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -737,7 +751,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
@@ -758,9 +772,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -771,7 +785,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   
   <div class="product-card__image-container">
     <div class="product-card__images swiper">
@@ -792,9 +806,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -814,7 +828,7 @@
   <div class="home-products__container container">
     <h2 class="home-products__title">Популярное</h2>
     <div class="home-products__list">
-      <div class="product-card">
+      <div class="product-card ">
   <div class="product-card-info-tag">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"></path>
@@ -839,9 +853,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -852,7 +866,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   <div class="product-card-info-tag">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"></path>
@@ -877,9 +891,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -890,7 +904,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   <div class="product-card-info-tag">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"></path>
@@ -915,9 +929,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -928,7 +942,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   <div class="product-card-info-tag">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"></path>
@@ -953,9 +967,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -966,7 +980,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   <div class="product-card-info-tag">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"></path>
@@ -991,9 +1005,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -1004,7 +1018,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   <div class="product-card-info-tag">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"></path>
@@ -1029,9 +1043,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -1042,7 +1056,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   <div class="product-card-info-tag">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"></path>
@@ -1067,9 +1081,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -1080,7 +1094,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   <div class="product-card-info-tag">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"></path>
@@ -1105,9 +1119,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -1118,7 +1132,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   <div class="product-card-info-tag">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"></path>
@@ -1143,9 +1157,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -1156,7 +1170,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   <div class="product-card-info-tag">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"></path>
@@ -1181,9 +1195,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -1194,7 +1208,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   <div class="product-card-info-tag">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"></path>
@@ -1219,9 +1233,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -1232,7 +1246,7 @@
     </div>
   </div>
   
-</div><div class="product-card">
+</div><div class="product-card ">
   <div class="product-card-info-tag">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4.33292 6.66457C3.91748 7.82781 3.52703 10.106 5.90361 9.91308C6.73141 9.84586 7.78174 9.04468 5.90361 5.81222C5.14811 4.51192 4.72552 1.27713 9.40375 0.666016C8.75494 1.74351 7.611 3.20696 9.11349 5.02421C9.51163 5.50575 10.4111 5.26544 10.2062 4.0593C10.7526 4.55784 13.0575 6.3268 13.3307 9.91308C13.3307 11.0227 13.2795 14.8985 8.56713 15.3327C7.20123 15.3327 4.45234 15.3166 3.05229 12.2932C2.79617 11.6017 1.85731 9.47889 4.33292 6.66457Z" fill="#1FB59C" stroke="#1E2025" stroke-width="0.01"></path>
@@ -1257,9 +1271,9 @@
   </div>
   <div class="product-card__price-container">
     <div class="product-card__price-wrap">
-      <div class="product-card__price">121 550 ₽</div>
-      <div class="product-card__price-old">435 000 ₽</div>
-    </div>
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
     <div class="product-card__btns">
       <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
@@ -1938,6 +1952,162 @@
     <a href="#" class="tbank-disclamer__next-btn btn --medium">
       <span>Продолжить</span>
     </a>
+  </div>
+</div>
+      <div class="order-modal" role="presentation">
+  <div class="order-modal__wrapper">
+    <div class="order-modal__title-wrap">
+      <div class="order-modal__title">Заказ от 2 апреля 2024</div>
+      <div class="order-modal__close-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.0938 5.63672C17.4452 5.28525 18.0157 5.28525 18.3672 5.63672C18.7183 5.98805 18.7181 6.55773 18.3672 6.90918L13.2754 12L18.3672 17.0918C18.7185 17.4433 18.7186 18.0138 18.3672 18.3652C18.0158 18.7167 17.4452 18.7165 17.0938 18.3652L12.002 13.2734L6.91113 18.3652C6.55969 18.7162 5.99 18.7164 5.63867 18.3652C5.2872 18.0138 5.2872 17.4433 5.63867 17.0918L10.7295 12L5.63867 6.90918C5.28747 6.55769 5.28729 5.9881 5.63867 5.63672C5.99005 5.28534 6.55964 5.28552 6.91113 5.63672L12.002 10.7275L17.0938 5.63672Z" fill="currentColor"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="order-modal__top-wrapper">
+      <div class="order-modal__left-wrapper">
+        <div class="order-modal__info-wrapper">
+          <div class="order-modal__delivery-wrap">
+            <div class="order-modal__delivery">Курьерская доставка</div>
+            <div class="order-modal__status --done">Доставлено</div>
+          </div>
+          <div class="order-modal__info">
+            <div class="order-modal__info-label">Адрес доставки</div>
+            <div class="order-modal__info-value">Ленинградская область, Мурино, Петровский бульвар, 3, кв. 12</div>
+          </div>
+          <div class="order-modal__info">
+            <div class="order-modal__info-label">Получатель</div>
+            <div class="order-modal__info-value">Иван Иванов +7 999 247 89 33</div>
+          </div>
+        </div>
+        <div class="order-modal__comment">
+          <label class="text-field --medium">
+            <textarea name="" id="" rows="3" placeholder="Комментарий"></textarea>
+          </label>
+        </div>
+      </div>
+      <div class="order-modal-total">
+        <div class="order-modal-total__title">Сумма заказа</div>
+        <ul class="order-modal-total__list">
+          <li>
+            <i>2 товар</i>
+            <i>217 5000 ₽</i>
+          </li>
+          <li>
+            <i>Доставка
+              <svg class="show-tooltip" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.0026 15.1673C4.04927 15.1673 0.835938 11.954 0.835938 8.00065C0.835938 4.04732 4.04927 0.833984 8.0026 0.833984C11.9559 0.833984 15.1693 4.04732 15.1693 8.00065C15.1693 11.954 11.9559 15.1673 8.0026 15.1673ZM8.0026 1.83398C4.6026 1.83398 1.83594 4.60065 1.83594 8.00065C1.83594 11.4007 4.6026 14.1673 8.0026 14.1673C11.4026 14.1673 14.1693 11.4007 14.1693 8.00065C14.1693 4.60065 11.4026 1.83398 8.0026 1.83398Z" fill="currentColor"></path>
+                <path d="M8 9.16732C7.72667 9.16732 7.5 8.94065 7.5 8.66732V5.33398C7.5 5.06065 7.72667 4.83398 8 4.83398C8.27333 4.83398 8.5 5.06065 8.5 5.33398V8.66732C8.5 8.94065 8.27333 9.16732 8 9.16732Z" fill="#1E2025"></path>
+                <path d="M8.0026 11.3339C7.91594 11.3339 7.82927 11.3139 7.74927 11.2806C7.66927 11.2472 7.59594 11.2006 7.52927 11.1406C7.46927 11.0739 7.4226 11.0072 7.38927 10.9206C7.35594 10.8406 7.33594 10.7539 7.33594 10.6672C7.33594 10.5806 7.35594 10.4939 7.38927 10.4139C7.4226 10.3339 7.46927 10.2606 7.52927 10.1939C7.59594 10.1339 7.66927 10.0872 7.74927 10.0539C7.90927 9.98724 8.09594 9.98724 8.25594 10.0539C8.33594 10.0872 8.40927 10.1339 8.47594 10.1939C8.53594 10.2606 8.5826 10.3339 8.61594 10.4139C8.64927 10.4939 8.66927 10.5806 8.66927 10.6672C8.66927 10.7539 8.64927 10.8406 8.61594 10.9206C8.5826 11.0072 8.53594 11.0739 8.47594 11.1406C8.40927 11.2006 8.33594 11.2472 8.25594 11.2806C8.17594 11.3139 8.08927 11.3339 8.0026 11.3339Z" fill="#1E2025"></path>
+              </svg>
+              <template class="tooltip-template">
+                <p>Инфо о заказе</p>
+              </template>
+            </i>
+            <i>217 5000 ₽</i>
+          </li>
+          <li>
+            <i>Скидка</i>
+            <i>-2 000 ₽</i>
+          </li>
+          <ul>
+            <li>
+              <i>Промокод</i>
+              <i>-1 500 ₽</i>
+            </li>
+            <li>
+              <i>Скидка CopterDrone</i>
+              <i>-500 ₽</i>
+            </li>
+          </ul>
+        </ul>
+        <div class="order-modal-total__total">
+          <i>Итог</i>
+          <i>217 3300 ₽</i>
+        </div>
+        <div class="order-modal-total__btns">
+          <div class="order-modal-total__action-btn">Что то не так?</div>
+          <div class="btn --medium">
+            <span>Электронный чек</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="order-modal__products">
+      <div class="order-modal__products-label">Товары в заказе:</div>
+      <div class="order-modal__products-cards">
+        <div class="product-card ">
+  
+  <div class="product-card__image-container">
+    <div class="product-card__images swiper">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+      </div>
+      <div class="product-card__images-btns">
+        <div class="product-card__favorite-btn" title="В избранное"></div>
+        <div class="product-card__compare-btn" title="Сравнить"></div>
+      </div>
+    </div>
+    <div class="product-card__pagination"></div>
+  </div>
+  <div class="product-card__text-container"><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+    <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+  </div>
+  <div class="product-card__price-container">
+    <div class="product-card__price-wrap">
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
+    <div class="product-card__btns">
+      <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"></path>
+          </svg>
+        </button>
+        <button class="btn --small --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+    </div>
+  </div>
+  
+</div>
+        <div class="product-card ">
+  
+  <div class="product-card__image-container">
+    <div class="product-card__images swiper">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+      </div>
+      <div class="product-card__images-btns">
+        <div class="product-card__favorite-btn" title="В избранное"></div>
+        <div class="product-card__compare-btn" title="Сравнить"></div>
+      </div>
+    </div>
+    <div class="product-card__pagination"></div>
+  </div>
+  <div class="product-card__text-container"><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+    <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+  </div>
+  <div class="product-card__price-container">
+    <div class="product-card__price-wrap">
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
+    <div class="product-card__btns">
+      <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"></path>
+          </svg>
+        </button>
+        <button class="btn --small --secondary product-card__buy-btn" type="button"><span>Купить в 1 клик</span></button>
+    </div>
+  </div>
+  
+</div>
+      </div>
+    </div>
   </div>
 </div>
 
