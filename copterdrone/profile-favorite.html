@@ -8,8 +8,11 @@
   
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/fancybox.css">
+  <link rel="stylesheet" href="assets/css/oval.min.css">
   <link rel="stylesheet" href="css/main.css?v=20">
-  <script defer src="js/main.js?v=20"></script>
+  <script src="assets/js/oval.min.js"></script>
+  <script src="js/main.js?v=20"></script>
+  <script src="js/modals.js?v=1"></script>
 <style>@font-face{display:swap;font-family:Geologica;font-stretch:100%;font-style:normal;font-weight:100 900;src:url(assets/fonts/Geologica-Var.woff2) format("woff2"),url(assets/fonts/Geologica-Var.ttf) format("opentype")}@font-face{display:swap;font-family:Rubik;font-stretch:100%;font-style:normal;font-weight:100 900;src:url(assets/fonts/Rubik-Var.woff2) format("woff2"),url(assets/fonts/Rubik-Var.ttf) format("opentype")}
 </style></head>
   <body>
@@ -64,14 +67,16 @@
           </svg>
         </div>
       </button>
-      <div class="header-search">
+      <form class="header-search" action="javascript:;">
   <div class="header-search__back"></div>
-  <form class="search-input --x-small" action="javascript:;">
-    <div class="search-input__input-wrap"><span class="search-input__icon"></span>
-      <input class="search-input__input" type="text" placeholder="Найти товар" name="search"><span class="search-input__clear"></span>
+  <label class="search-input --x-small">
+    <div class="search-input__input-wrap">
+      <span class="search-input__icon"></span>
+      <input class="search-input__input" type="text" placeholder="Найти товар" name="query">
+      <span class="search-input__clear"></span>
     </div>
     <button class="search-input__submit" type="submit">Найти</button>
-  </form>
+  </label>
   <div class="search-dropdown" aria-hidden="true">
     <div class="search-dropdown__history">
       <div class="search-dropdown__history-title-wrap">
@@ -91,14 +96,28 @@
         <li><a href="#">Машинки</a></li>
       </ul>
     </div>
-    <ul class="search-dropdown__results">
-      <li><a href="#" data-text="Квадрокоптеры dji"><b>Квадрокоптер</b>ы dji</a></li>
-      <li><a href="#" data-text="Квадрокоптеры и аксессуары"><b>Квадрокоптер</b>ы и аксессуары </a></li>
-      <li><a href="#" data-text="Квадрокоптеры с камерой"><b>Квадрокоптер</b>ы с камерой</a></li>
-      <li><a href="#" data-text="Квадрокоптеры xiaomi"><b>Квадрокоптер</b>ы xiaomi</a></li>
-    </ul>
+    <div class="search-dropdown__results">
+      <div class="_items">
+        <div class="_items__wrap">
+          <div class="_items__label">Каталоги:</div>
+          <ul class="_items__items">
+            <li class="_items__item"><a href="#" data-text="">123</a></li>
+            <li class="_items__item"><a href="#" data-text="">123</a></li>
+            <li class="_items__item"><a href="#" data-text="">123</a></li>
+          </ul>
+        </div>
+        <div class="_items__wrap">
+          <div class="_items__label">Товары:</div>
+          <ul class="_items__items">
+            <li class="_items__item"><a href="#" data-text="">123</a></li>
+            <li class="_items__item"><a href="#" data-text="">123</a></li>
+            <li class="_items__item"><a href="#" data-text="">123</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</form>
     </div>
     <div class="header__contacts">
       <div class="header__region">
@@ -873,58 +892,6 @@
     <button type="button" class="select-date-modal__select-btn btn --accent --medium">
       <span>Выбрать</span>
     </button>
-  </div>
-</div>
-      <div class="tbank-disclamer" role="presentation">
-  <div class="tbank-disclamer__wrapper">
-    <div class="tbank-disclamer__title-wrapper">
-      <h1 class="tbank-disclamer__title">Процедура оформления кредита</h1>
-      <div class="tbank-disclamer__close-btn">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17.0898 5.63672C17.4413 5.28525 18.0118 5.28525 18.3633 5.63672C18.7144 5.98805 18.7142 6.55773 18.3633 6.90918L13.2715 12L18.3633 17.0918C18.7146 17.4433 18.7147 18.0138 18.3633 18.3652C18.0119 18.7167 17.4413 18.7165 17.0898 18.3652L11.998 13.2734L6.90723 18.3652C6.55578 18.7162 5.9861 18.7164 5.63477 18.3652C5.28329 18.0138 5.28329 17.4433 5.63477 17.0918L10.7256 12L5.63477 6.90918C5.28357 6.55769 5.28339 5.9881 5.63477 5.63672C5.98615 5.28534 6.55573 5.28552 6.90723 5.63672L11.998 10.7275L17.0898 5.63672Z" fill="currentColor"></path>
-        </svg>
-      </div>
-    </div>
-    <!-- • -->
-    <img class="tbank-disclamer__logo" src="assets/img/tbank-logo.svg" alt="" width="118" height="36">
-
-    <div class="tbank-disclamer__content">
-      <h2 class="tbank-disclamer__subtitle">1. Заполните анкету и дождитесь одобрения кредита банком</h2>
-      <p class="tbank-disclamer__text">
-        После подтверждения заказа вас автоматически перенаправит на сайт банка для заполнения анкеты. <br>
-        Заполните ее, следуя инструкциям. <br>
-        В установленный банком срок вам придет уведомление об одобрении кредита
-      </p>
-
-      <h2 class="tbank-disclamer__subtitle">2. Подпишите кредитный договор одним из следующих способов:</h2>
-      <p class="tbank-disclamer__text">
-        Через выездного курьера Банка, <br>
-        Безбумажным способом (посредством sms). <br>
-        Варианты будут обозначены после одобрения вашей заявки. <br>
-        Для оформления кредитного договора необходим Ваш паспорт гражданина РФ.
-      </p>
-
-      <h2 class="tbank-disclamer__subtitle">3. Заберите заказ в магазине</h2>
-      <p class="tbank-disclamer__text">
-        Если все товары в наличии, можете забрать заказ в магазине. Вам потребуется Ваш паспорт. <br>
-        Услуга предоставляется АО «ТБанк»
-      </p>
-    </div>
-
-    <div class="tbank-disclamer__inputs">
-      <label class="tbank-disclamer__input-name input">
-        <input placeholder="Заполните имя" type="text" name="">
-        <i></i>
-      </label>
-      <label class="tbank-disclamer__input-phone input">
-        <input placeholder="Заполните email" type="tel" name="">
-        <i></i>
-      </label>
-    </div>
-
-    <a href="#" class="tbank-disclamer__next-btn btn --medium">
-      <span>Продолжить</span>
-    </a>
   </div>
 </div>
       <div class="order-modal" role="presentation">
