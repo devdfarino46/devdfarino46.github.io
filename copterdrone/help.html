@@ -165,149 +165,327 @@
 
       <main class="page">
         
-  <div class="profile-section container">
-    <h1 class="profile-section__title">Профиль</h1>
-    <div class="profile-section__wrapper">
-      <div class="profile-tabs">
-        <a href="profile-mydata.html" class="profile-tabs__tab --hide-mobile --active">
-          Личные данные
-        </a>
-        <a href="profile-orders.html" class="profile-tabs__tab">
-          Заказы
-        </a>
-        <a href="profile-favorite.html" class="profile-tabs__tab">
-          Избранное
-        </a>
-        <a href="profile-compare.html" class="profile-tabs__tab">
-          Сравнение
-        </a>
-        <a href="#" class="profile-tabs__tab --hide-mobile">
-          Выйти
-        </a>
-      </div>
-      <div class="profile-section__main">
-        <div class="profile-user-data">
-  <div class="profile-user-data__top">
-    <div class="profile-user-data__title-wrap">
-      <h2 class="profile-user-data__title">Личные данные</h2>
-      <a href="#" class="profile-user-data__quit-btn" title="Выйти">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15.2405 22.2705H15.1105C10.6705 22.2705 8.5305 20.5205 8.1605 16.6005C8.1205 16.1905 8.4205 15.8205 8.8405 15.7805C9.2505 15.7405 9.6205 16.0505 9.6605 16.4605C9.9505 19.6005 11.4305 20.7705 15.1205 20.7705H15.2505C19.3205 20.7705 20.7605 19.3305 20.7605 15.2605V8.74047C20.7605 4.67047 19.3205 3.23047 15.2505 3.23047H15.1205C11.4105 3.23047 9.9305 4.42047 9.6605 7.62047C9.6105 8.03047 9.2705 8.34047 8.8405 8.30047C8.4205 8.27047 8.1205 7.90047 8.1505 7.49047C8.4905 3.51047 10.6405 1.73047 15.1105 1.73047H15.2405C20.1505 1.73047 22.2505 3.83047 22.2505 8.74047V15.2605C22.2505 20.1705 20.1505 22.2705 15.2405 22.2705Z" fill="currentColor" fill-opacity="0.6"></path>
-          <path d="M14.88 12.75H2C1.59 12.75 1.25 12.41 1.25 12C1.25 11.59 1.59 11.25 2 11.25H14.88C15.29 11.25 15.63 11.59 15.63 12C15.63 12.41 15.3 12.75 14.88 12.75Z" fill="currentColor" fill-opacity="0.6"></path>
-          <path d="M12.6537 16.0998C12.4637 16.0998 12.2738 16.0298 12.1238 15.8798C11.8338 15.5898 11.8338 15.1098 12.1238 14.8198L14.9437 11.9998L12.1238 9.17984C11.8338 8.88984 11.8338 8.40984 12.1238 8.11984C12.4137 7.82984 12.8938 7.82984 13.1838 8.11984L16.5338 11.4698C16.8238 11.7598 16.8238 12.2398 16.5338 12.5298L13.1838 15.8798C13.0338 16.0298 12.8437 16.0998 12.6537 16.0998Z" fill="currentColor" fill-opacity="0.6"></path>
-        </svg>
-      </a>
+  <div class="breadcrumbs container">
+  <ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+    <li class="crumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+      <a itemprop="item" href="/"><span itemprop="name">Главная</span></a>
+      <meta itemprop="position" content="1">
+    </li>
+    <li class="crumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+      <a itemprop="item" href="/catalog/"><span itemprop="name">Каталог</span></a>
+      <meta itemprop="position" content="2">
+    </li>
+    <li class="crumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+      <a itemprop="item" href="/catalog/rc_cars/"><span itemprop="name">Радиоуправляемые машинки</span></a>
+      <meta itemprop="position" content="3">
+    </li>
+  </ul>
+</div>
+  <div class="help container">
+  <h1 class="help__title">Помощь</h1>
+  <div class="help__wrapper">
+    <div class="help__images">
+      <div class="_image" style="background-image: url('assets/img/help-avas/1.webp');"></div>
+      <div class="_image" style="background-image: url('assets/img/help-avas/2.webp');"></div>
+      <div class="_image" style="background-image: url('assets/img/help-avas/3.webp');"></div>
+      <div class="_image" style="background-image: url('assets/img/help-avas/4.webp');"></div>
+      <div class="_image" style="background-image: url('assets/img/help-avas/5.webp');"></div>
     </div>
-    <div class="tab-btns">
-      <button type="button" data-tab="phys" class="--active">Физическое лицо</button>
-      <button type="button" data-tab="ur">Юридическое лицо</button>
-    </div>
-  </div>
-
-  <div class="profile-user-data__wrapper" data-tab="phys">
-    <div class="notice">
-      <p>Заполнив все поля, вам больше не придется делать это снова при оформлении покупок.</p>
-    </div>
-    <div class="profile-user-data__main-inputs --active" data-tab="phys">
-      <label class="profile-user-data__input">
-        <p class="prodile-user-data__input-label">Имя</p>
-        <div class="input --medium">
-          <input placeholder="Имя" type="text" name="" value="Марк">
+    <form action="javascript:;" class="help__form">
+      <p class="help__form-title">Есть вопросы?</p>
+      <p class="help__descr">
+        У вас возникли вопросы по покупке товара, возврату товара, гарантийному обслуживанию? Оставьте нам свои контактные данные, и мы свяжемся с вами и с удовольствием поможем по любому вопросу.
+      </p>
+      <div class="help__inputs">
+        <label class="input --medium">
+          <input placeholder="Имя" type="text" name="name">
           <i></i>
-        </div>
-      </label>
-      <label class="profile-user-data__input">
-        <p class="prodile-user-data__input-label">Фамилия</p>
-        <div class="input --medium">
-          <input placeholder="Фамилия" type="text" name="" value="Сангинов">
+        </label>
+        <label class="input --medium">
+          <input placeholder="Телефон" type="tel" name="phone">
           <i></i>
-        </div>
-      </label>
-      <label class="profile-user-data__input">
-        <p class="prodile-user-data__input-label">Почта</p>
-        <div class="input --medium">
-          <input placeholder="Электронная почта" type="email" name="">
-          <i></i>
-        </div>
-      </label>
-      <label class="profile-user-data__input">
-        <p class="prodile-user-data__input-label">Телефон</p>
-        <div class="input --medium">
-          <input placeholder="Телефон" type="text" name="" value="+7 999 247-33-79">
-          <i></i>
-        </div>
-      </label>
-    </div>
-    <div class="profile-user-data__main-inputs" data-tab="ur">
-      <label class="profile-user-data__input">
-        <div class="input --medium">
-          <input placeholder="Имя" type="text" name="" value="Марк">
-          <i></i>
-        </div>
-      </label>
-      <label class="profile-user-data__input">
-        <div class="input --medium">
-          <input placeholder="Организация/ИП" type="text" name="">
-          <i></i>
-        </div>
-      </label>
-      <label class="profile-user-data__input">
-        <div class="input --medium">
-          <input placeholder="Электронная почта" type="email" name="">
-          <i></i>
-        </div>
-      </label>
-      <label class="profile-user-data__input">
-        <div class="input --medium">
-          <input placeholder="Телефон" type="text" name="" value="+7 999 247-33-79">
-          <i></i>
-        </div>
-      </label>
-      <label class="profile-user-data__input --2-cols">
+        </label>
         <div class="text-field --medium">
-          <textarea name="" id="" rows="3" placeholder="Реквизиты"></textarea>
+          <textarea name="order-field" id="" rows="3" placeholder="Номер заказа (не обязательно)"></textarea>
         </div>
-      </label>
-    </div>
-    <label class="profile-user-data__ads-checkbox checkbox --medium">
-      <i>
-        <input type="checkbox">
-      </i>
-      <span>Я даю Согласие на получение рекламных и информационных сообщений</span>
-    </label>
-
-    <p class="profile-user-data__address-label">Ваш адрес</p>
-    <div class="profile-user-data__address-inputs">
-      <label class="input --medium">
-        <input placeholder="Адрес доставки" type="text" name="">
-        <i></i>
-      </label>
-      <label class="input --medium">
-        <input placeholder="Подъезд" type="text" name="">
-        <i></i>
-      </label>
-      <label class="input --medium">
-        <input placeholder="Этаж" type="text" name="">
-        <i></i>
-      </label>
-      <label class="input --medium">
-        <input placeholder="Квартира" type="text" name="">
-        <i></i>
-      </label>
-    </div>
-    <div class="profile-user-data__bottom-btns">
-      <button type="button" class="btn --accent --medium">
-        <span>Сохранить изменения</span>
+      </div>
+      <button type="submit" class="help__submit-btn btn --medium">
+        <span>Хочу консультацию</span>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6566 4.13538C13.1322 4.0091 13.6217 4.29176 13.7501 4.76673L15.7229 12.0641C15.8513 12.5391 15.5699 13.0265 15.0944 13.1528C14.6188 13.279 14.1292 12.9964 14.0008 12.5214L12.2606 6.08405L5.81552 7.79562C5.33998 7.9219 4.8504 7.63924 4.72199 7.16427C4.59359 6.68931 4.875 6.2019 5.35053 6.07561L12.6566 4.13538Z" fill="currentColor"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9632 4.86709C13.3902 5.11364 13.5374 5.65817 13.292 6.08331L7.88457 15.4492C7.63911 15.8744 7.09394 16.0191 6.66689 15.7726C6.23984 15.526 6.09264 14.9815 6.3381 14.5564L11.7455 5.19046C11.991 4.76531 12.5361 4.62053 12.9632 4.86709Z" fill="currentColor"></path>
+        </svg>
       </button>
-      <button type="button" class="profile-user-data__remove-profile-btn">
-        Удалить профиль
-      </button>
-    </div>
+      <label class="help__switch switch --medium">
+        <i><input type="checkbox"></i>
+        <span>Cогласие на обработку персональных данных</span>
+      </label>
+    </form>
   </div>
 </div>
+  <section class="home-products">
+  <div class="home-products__container container">
+    <h2 class="home-products__title">Популярное</h2>
+    <div class="home-products__list">
+      <div class="product-card ">
+  
+  <div class="product-card__image-container">
+    <div class="product-card__images swiper">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+      </div>
+      <div class="product-card__images-btns">
+        <div class="product-card__favorite-btn" title="В избранное"></div>
+        <div class="product-card__compare-btn" title="Сравнить"></div>
       </div>
     </div>
+    <div class="product-card__pagination"></div>
   </div>
+  <div class="product-card__text-container"><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+    <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+  </div>
+  <div class="product-card__price-container">
+    <div class="product-card__price-wrap">
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
+    <div class="product-card__btns">
+      <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"></path>
+          </svg>
+        </button>
+        <button class="btn --small --secondary product-card__buy-btn fast-pay-modal-open" type="button"><span>Купить в 1 клик</span></button>
+    </div>
+  </div>
+  
+</div><div class="product-card ">
+  
+  <div class="product-card__image-container">
+    <div class="product-card__images swiper">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+      </div>
+      <div class="product-card__images-btns">
+        <div class="product-card__favorite-btn" title="В избранное"></div>
+        <div class="product-card__compare-btn" title="Сравнить"></div>
+      </div>
+    </div>
+    <div class="product-card__pagination"></div>
+  </div>
+  <div class="product-card__text-container"><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+    <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+  </div>
+  <div class="product-card__price-container">
+    <div class="product-card__price-wrap">
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
+    <div class="product-card__btns">
+      <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"></path>
+          </svg>
+        </button>
+        <button class="btn --small --secondary product-card__buy-btn fast-pay-modal-open" type="button"><span>Купить в 1 клик</span></button>
+    </div>
+  </div>
+  
+</div><div class="product-card ">
+  
+  <div class="product-card__image-container">
+    <div class="product-card__images swiper">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+      </div>
+      <div class="product-card__images-btns">
+        <div class="product-card__favorite-btn" title="В избранное"></div>
+        <div class="product-card__compare-btn" title="Сравнить"></div>
+      </div>
+    </div>
+    <div class="product-card__pagination"></div>
+  </div>
+  <div class="product-card__text-container"><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+    <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+  </div>
+  <div class="product-card__price-container">
+    <div class="product-card__price-wrap">
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
+    <div class="product-card__btns">
+      <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"></path>
+          </svg>
+        </button>
+        <button class="btn --small --secondary product-card__buy-btn fast-pay-modal-open" type="button"><span>Купить в 1 клик</span></button>
+    </div>
+  </div>
+  
+</div><div class="product-card ">
+  
+  <div class="product-card__image-container">
+    <div class="product-card__images swiper">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+      </div>
+      <div class="product-card__images-btns">
+        <div class="product-card__favorite-btn" title="В избранное"></div>
+        <div class="product-card__compare-btn" title="Сравнить"></div>
+      </div>
+    </div>
+    <div class="product-card__pagination"></div>
+  </div>
+  <div class="product-card__text-container"><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+    <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+  </div>
+  <div class="product-card__price-container">
+    <div class="product-card__price-wrap">
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
+    <div class="product-card__btns">
+      <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"></path>
+          </svg>
+        </button>
+        <button class="btn --small --secondary product-card__buy-btn fast-pay-modal-open" type="button"><span>Купить в 1 клик</span></button>
+    </div>
+  </div>
+  
+</div><div class="product-card ">
+  
+  <div class="product-card__image-container">
+    <div class="product-card__images swiper">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+      </div>
+      <div class="product-card__images-btns">
+        <div class="product-card__favorite-btn" title="В избранное"></div>
+        <div class="product-card__compare-btn" title="Сравнить"></div>
+      </div>
+    </div>
+    <div class="product-card__pagination"></div>
+  </div>
+  <div class="product-card__text-container"><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+    <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+  </div>
+  <div class="product-card__price-container">
+    <div class="product-card__price-wrap">
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
+    <div class="product-card__btns">
+      <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"></path>
+          </svg>
+        </button>
+        <button class="btn --small --secondary product-card__buy-btn fast-pay-modal-open" type="button"><span>Купить в 1 клик</span></button>
+    </div>
+  </div>
+  
+</div><div class="product-card ">
+  
+  <div class="product-card__image-container">
+    <div class="product-card__images swiper">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+          <img class="swiper-slide" src="assets/img/product-cards/drone.webp" alt="" width="228" height="210" loading="lazy" decoding="async">
+      </div>
+      <div class="product-card__images-btns">
+        <div class="product-card__favorite-btn" title="В избранное"></div>
+        <div class="product-card__compare-btn" title="Сравнить"></div>
+      </div>
+    </div>
+    <div class="product-card__pagination"></div>
+  </div>
+  <div class="product-card__text-container"><a class="product-card__title" href="product.html">Квадрокоптер DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2) Далеко-далеко, за словесными.</a>
+    <div class="product-card__descr">DJI Mini 4 Pro — самый продвинутый дрон с мини-камерой на сегодняшний день. Он объединяет в себе мощные возможности визуализации, всенаправленное обнаружение препятствий, ActiveTrack 360° с новым режимом трассировки и передачу видео в формате FHD на 20 км, что дает еще больше возможностей как профессионалам, так и новичкам.</div>
+  </div>
+  <div class="product-card__price-container">
+    <div class="product-card__price-wrap">
+        <div class="product-card__price">121 550 ₽</div>
+        <div class="product-card__price-old">435 000 ₽</div>
+      </div>
+    <div class="product-card__btns">
+      <button class="btn --small --accent product-card__basket-btn" type="button"><span>В корзину</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6576 4.13636C13.1331 4.01007 13.6227 4.29274 13.7511 4.7677L15.7239 12.0651C15.8523 12.54 15.5709 13.0275 15.0953 13.1537C14.6198 13.28 14.1302 12.9974 14.0018 12.5224L12.2615 6.08502L5.81649 7.7966C5.34096 7.92288 4.85137 7.64022 4.72297 7.16525C4.59457 6.69028 4.87598 6.20287 5.35151 6.07659L12.6576 4.13636Z" fill="currentColor"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9642 4.86806C13.3912 5.11462 13.5384 5.65914 13.293 6.08429L7.88555 15.4502C7.64009 15.8753 7.09491 16.0201 6.66787 15.7736C6.24082 15.527 6.09362 14.9825 6.33907 14.5573L11.7465 5.19143C11.9919 4.76628 12.5371 4.62151 12.9642 4.86806Z" fill="currentColor"></path>
+          </svg>
+        </button>
+        <button class="btn --small --secondary product-card__buy-btn fast-pay-modal-open" type="button"><span>Купить в 1 клик</span></button>
+    </div>
+  </div>
+  
+</div>
+    </div>
+    
+  </div>
+  </section>
+  <div class="promo-section container">
+  <ul class="promo-section__items">
+    <li>
+      <div class="promo-block" style="background-image: url(assets/img/promo/promo-1.webp)">
+        <h2 class="promo-block__top">Топовый рейтинг</h2>
+        <p class="promo-block__text">Магазин дронов<br>и игрушек №1 <br>в России</p>
+      </div>
+    </li>
+    <li>
+      <div class="promo-block --light" style="background-image: url(assets/img/promo/promo-2.webp)">
+        <h2 class="promo-block__top">Очень быстро</h2>
+        <p class="promo-block__text">Доставка <br>в день заказа</p>
+      </div>
+    </li>
+    <li>
+      <div class="promo-block" style="background-image: url(assets/img/promo/promo-3.webp)">
+        <h2 class="promo-block__top">Без рисков</h2>
+        <p class="promo-block__text">31 день <br>на возврат</p>
+      </div>
+    </li>
+    <li>
+      <div class="promo-block --light" style="background-image: url(assets/img/promo/promo-4.webp)">
+        <h2 class="promo-block__top">Низкие цены</h2>
+        <p class="promo-block__text">Цены ниже <br>маркетплейсов</p>
+      </div>
+    </li>
+  </ul>
+</div>
+  <section class="feedback container">
+  <div class="feedback__wrapper" style="background-image: url(assets/img/copter-3d-logo.webp);">
+    <div class="feedback__left">
+      <h2 class="feedback__title">Есть вопросы?</h2>
+      <p class="feedback__text">Оставьте заявку и мы свяжемся с вами <br>в течении 10 минут</p>
+    </div>
+    <form class="feedback__form" action="javascript:;">
+      <div class="feedback__inputs">
+        <div class="input --medium">
+          <input placeholder="Имя" type="text"><i></i>
+        </div>
+        <div class="input --medium">
+          <input placeholder="Телефон" type="text"><i></i>
+        </div>
+      </div>
+      <button class="btn --accent --medium" type="submit"> <span>Хочу консультацию</span></button>
+      <label class="switch --medium"><i>
+        <input type="checkbox"></i><span>Cогласие на обработку персональных данных</span>
+      </label>
+    </form>
+  </div>
+</section>
 
       </main>
       
