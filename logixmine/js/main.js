@@ -30,10 +30,64 @@ __webpack_require__.r(__webpack_exports__);
             nextEl: nextEl,
             prevEl: prevEl
         },
+        mousewheel: {
+            forceToAxis: true
+        },
         breakpoints: {
             993: {
                 spaceBeetween: 20
             }
+        }
+    });
+}));
+
+
+/***/ },
+
+/***/ "./ts/ui/faq.ts"
+/*!**********************!*\
+  !*** ./ts/ui/faq.ts ***!
+  \**********************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => document.addEventListener('DOMContentLoaded', () => {
+    const faq = document.querySelector('.faq');
+    if (!faq)
+        return;
+    const faqItems = faq.querySelectorAll('.faq-item');
+    const toggleHeight = function (item) {
+        const dropdown = item.querySelector('.faq-item__dropdown');
+        if (!dropdown)
+            return;
+        if (item.classList.contains('--active')) {
+            dropdown.style.maxHeight = dropdown.scrollHeight + "px";
+        }
+        else {
+            dropdown.style.maxHeight = "0px";
+        }
+    };
+    faqItems.forEach(item => {
+        toggleHeight(item);
+    });
+    faq.addEventListener('click', ev => {
+        const target = ev.target;
+        const faqItem = target.closest('.faq-item');
+        if (faqItem) {
+            faqItems.forEach(item => {
+                if (faqItem.contains(item)) {
+                    item.classList.toggle('--active');
+                }
+                else {
+                    item.classList.remove('--active');
+                }
+            });
+            faqItems.forEach(item => {
+                toggleHeight(item);
+            });
         }
     });
 }));
@@ -223,11 +277,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _cases__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cases */ "./ts/ui/cases.ts");
-/* harmony import */ var _footerLinks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footerLinks */ "./ts/ui/footerLinks.ts");
-/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header */ "./ts/ui/header.ts");
-/* harmony import */ var _input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./input */ "./ts/ui/input.ts");
-/* harmony import */ var _mobileMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./mobileMenu */ "./ts/ui/mobileMenu.ts");
-/* harmony import */ var _popularRoutes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./popularRoutes */ "./ts/ui/popularRoutes.ts");
+/* harmony import */ var _faq__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./faq */ "./ts/ui/faq.ts");
+/* harmony import */ var _footerLinks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footerLinks */ "./ts/ui/footerLinks.ts");
+/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./header */ "./ts/ui/header.ts");
+/* harmony import */ var _input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./input */ "./ts/ui/input.ts");
+/* harmony import */ var _mobileMenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./mobileMenu */ "./ts/ui/mobileMenu.ts");
+/* harmony import */ var _popularRoutes__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./popularRoutes */ "./ts/ui/popularRoutes.ts");
+
 
 
 
@@ -235,12 +291,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {
-    (0,_input__WEBPACK_IMPORTED_MODULE_3__["default"])();
+    (0,_input__WEBPACK_IMPORTED_MODULE_4__["default"])();
     (0,_cases__WEBPACK_IMPORTED_MODULE_0__["default"])();
-    (0,_popularRoutes__WEBPACK_IMPORTED_MODULE_5__["default"])();
-    (0,_header__WEBPACK_IMPORTED_MODULE_2__["default"])();
-    (0,_footerLinks__WEBPACK_IMPORTED_MODULE_1__["default"])();
-    (0,_mobileMenu__WEBPACK_IMPORTED_MODULE_4__["default"])();
+    (0,_popularRoutes__WEBPACK_IMPORTED_MODULE_6__["default"])();
+    (0,_header__WEBPACK_IMPORTED_MODULE_3__["default"])();
+    (0,_footerLinks__WEBPACK_IMPORTED_MODULE_2__["default"])();
+    (0,_mobileMenu__WEBPACK_IMPORTED_MODULE_5__["default"])();
+    (0,_faq__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });
 
 

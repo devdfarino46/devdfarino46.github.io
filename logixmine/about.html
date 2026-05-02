@@ -181,11 +181,19 @@
         </div>
 
         <main class="page">
-            <div class="hero" style="background-image: url(img/hero/hero-1.webp);">
+            <div class="hero" style="background-image: url(img/hero/hero-2.webp);">
                 <div class="container">
-                    <h1 class="hero__title">Международные грузоперевозки по <strong>России, СНГ и Китаю</strong></h1>
-                    <p class="hero__text">
-                        Надежная доставка любых грузов точно в срок. Оптимальные маршруты и честные цены
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <div class="icon icon-chevron-right"></div>
+                            <li><a href="about.html">О компании</a></li>
+                        </ul>
+                    </div>
+                    <h1 class="hero__title">О компании LogixLine</h1>
+                    <p class="hero__subtitle">Международные грузоперевозки по России, СНГ и Китаю. Более 10 лет на рынке</p>
+                    <p class="hero__text --small">
+                        Мы создаем логистические решения, которые помогают бизнесу развиваться. Берем на себя сложные задачи и доставляем грузы точно в срок, в любую точку маршрута.
                     </p>
                     <ul class="hero__list">
                         <li class="hero-litem">
@@ -234,280 +242,22 @@
                 </div>
             </div>
 
-            <section class="main-form">
+            <section class="about-main">
                 <div class="container">
-                    <div class="main-form__wrapper">
-                        <h2 class="main-form__title">Найдите <strong>транспорт</strong> для перевозки за 1 минуту</h2>
-                        <form action="javascript:void(0);" class="main-form__form">
-                            <div class="main-form__input-col">
-                                <div class="main-form__label">Откуда:</div>
-                                <div class="input-form-search main-form__input-from-to">
-                                    <div class="input --light">
-                                        <input type="text" name="from" placeholder="Город или регион" autocomplete="off">
-                                        <i class="icon icon-map-outline"></i>
-                                        <i class="icon icon-close input__clear"></i>
-
-                                        <div class="input-form-search__dropdown">
-                                            <div class="input-form-search__label">Популярные города</div>
-                                            <div class="input-form-search__items">
-                                                <div class="input-form-search__item">Москва</div>
-                                                <div class="input-form-search__item">Санкт-Петербург</div>
-                                                <div class="input-form-search__item">Новосибирск</div>
-                                                <div class="input-form-search__item">Екатеринбург</div>
-                                                <div class="input-form-search__item">Казань</div>
-                                                <div class="input-form-search__item">Челябинск</div>
-                                                <div class="input-form-search__item">Самара</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="main-form__input-col main-form__arrows-btn-col">
-                                <div class="arrows-btn">
-                                    <i class="icon icon-arrows"></i>
-                                </div>
-                            </div>
-                            <div class="main-form__input-col">
-                                <div class="main-form__label">Куда:</div>
-                                <div class="input-form-search main-form__input-from-to">
-                                    <div class="input --light">
-                                        <input type="text" name="to" placeholder="Город или регион" autocomplete="off">
-                                        <i class="icon icon-map-outline"></i>
-                                        <i class="icon icon-close input__clear"></i>
-
-                                        <div class="input-form-search__dropdown">
-                                            <div class="input-form-search__label">Популярные города</div>
-                                            <div class="input-form-search__items">
-                                                <div class="input-form-search__item">Москва</div>
-                                                <div class="input-form-search__item">Санкт-Петербург</div>
-                                                <div class="input-form-search__item">Новосибирск</div>
-                                                <div class="input-form-search__item">Екатеринбург</div>
-                                                <div class="input-form-search__item">Казань</div>
-                                                <div class="input-form-search__item">Челябинск</div>
-                                                <div class="input-form-search__item">Самара</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="main-form__input-col">
-                                <div class="main-form__label">Тип перевозки:</div>
-                                <div class="main-form__selects">
-                                    <div class="input-select main-form__select">
-                                        <input type="radio" name="type" value="1" checked>
-                                        <i class="icon icon-auto"></i>
-                                        <span>Прямое авто</span>
-                                    </div>
-                                    <div class="input-select main-form__select">
-                                        <input type="radio" name="type" value="2">
-                                        <i class="icon icon-cargo-2"></i>
-                                        <span>Сборный груз</span>
-                                    </div>
-                                    <div class="input-select main-form__select">
-                                        <input type="radio" name="type" value="3">
-                                        <i class="icon icon-square-dots"></i>
-                                        <span>Негабарит</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="main-form__input-col main-form__submit-col">
-                                <button type="submit" class="btn main-form__submit">
-                                    Найти
-                                </button>
-                            </div>
-                        </form>
-                        <div class="main-form__bottom">
-                            <div class="main-form__bottom-item">
-                                <i class="icon icon-clock"></i>
-                                <span><strong>Ответим за 15 минут</strong> <br>Быстрый расчет стоимости</span>
-                            </div>
-                            <div class="main-form__bottom-item">
-                                <i class="icon icon-bootstrap"></i>
-                                <span><strong>Без обязательств</strong> <br>Консультация бесплатно</span>
-                            </div>
-                            <div class="main-form__bottom-item">
-                                <i class="icon icon-doc-star"></i>
-                                <span><strong>Работа по договору</strong> <br>Прозрачные условия</span>
-                            </div>
-                            <div class="main-form__bottom-item">
-                                <i class="icon icon-drone-check"></i>
-                                <span><strong>Доставка точно в срок</strong> <br>Контроль на всеъ этапах</span>
-                            </div>
+                    <div class="about-main__left">
+                        <h2 class="about-main__title section-title">О компании</h2>
+                        <div class="about-main__text">
+                            Компания LOGIX специализируется на автомобильных грузоперевозках по России, странам СНГ и Китаю. Мы организуем доставку грузов любой сложности: от сборных отправок до негабаритных перевозок
+                            <br><br>
+                            За годы работы мы выстроили надежную логистическую сеть и наладили сотрудничество с проверенными перевозчиками, что позволяет нам гарантировать стабильные сроки доставки и безопасность груза
+                        </div>
+                        <div class="about-main__btn">
+                            <a href="#" class="btn">
+                                Подробнее
+                            </a>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section class="popular-routes">
-                <div class="container">
-                    <h2 class="popular-routes__title section-title">Популярные маршруты</h2>
-                    <div class="popular-routes__items">
-                        <div class="route-card">
-                            <div class="route-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                            <div class="route-card__wrap">
-                                <h3 class="route-card__title"><a href="#">Москва — Алматы</a></h3>
-                                <ul class="route-card__list">
-                                    <li>
-                                        <i class="icon icon-map-point"></i>
-                                        Казахстан
-                                    </li>
-                                    <li>
-                                        <i class="icon icon-clock"></i>
-                                        3-5 дней
-                                    </li>
-                                    <li>
-                                        <i class="icon icon-money"></i>
-                                        от 48 000 ₽
-                                    </li>
-                                </ul>
-                                <div class="route-card__btns">
-                                    <a href="#" class="btn">Рассчитать</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="route-card">
-                            <div class="route-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                            <div class="route-card__wrap">
-                                <h3 class="route-card__title"><a href="#">Москва — Минск</a></h3>
-                                <ul class="route-card__list">
-                                    <li>
-                                        <i class="icon icon-map-point"></i>
-                                        Беларусь
-                                    </li>
-                                    <li>
-                                        <i class="icon icon-clock"></i>
-                                        2-3 дня
-                                    </li>
-                                    <li>
-                                        <i class="icon icon-money"></i>
-                                        от 26 000 ₽
-                                    </li>
-                                </ul>
-                                <div class="route-card__btns">
-                                    <a href="#" class="btn">Рассчитать</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="route-card">
-                            <div class="route-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                            <div class="route-card__wrap">
-                                <h3 class="route-card__title"><a href="#">Москва — Владивосток</a></h3>
-                                <ul class="route-card__list">
-                                    <li>
-                                        <i class="icon icon-map-point"></i>
-                                        Россия
-                                    </li>
-                                    <li>
-                                        <i class="icon icon-clock"></i>
-                                        7-9 дней
-                                    </li>
-                                    <li>
-                                        <i class="icon icon-money"></i>
-                                        от 95 000 ₽
-                                    </li>
-                                </ul>
-                                <div class="route-card__btns">
-                                    <a href="#" class="btn">Рассчитать</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="route-card">
-                            <div class="route-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                            <div class="route-card__wrap">
-                                <h3 class="route-card__title"><a href="#">Китай — Россия</a></h3>
-                                <ul class="route-card__list">
-                                    <li>
-                                        <i class="icon icon-map-point"></i>
-                                        Международный
-                                    </li>
-                                    <li>
-                                        <i class="icon icon-clock"></i>
-                                        10-14 дней
-                                    </li>
-                                    <li>
-                                        <i class="icon icon-money"></i>
-                                        от 110 000 ₽    
-                                    </li>
-                                </ul>
-                                <div class="route-card__btns">
-                                    <a href="#" class="btn">Рассчитать</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="industry">
-                <div class="container">
-                    <h2 class="section-title industry__title">Отрасли, с которыми мы работаем</h2>
-                    <div class="industry__items">
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Производство и оборудование</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Строительство</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Торговля и ритейл</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Автопром</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Сельское хозяйство</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Химическая промышленность</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Пищевое производство</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Все отрасли</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="industry__nums">
+                    <div class="about-main__nums">
                         <div class="num-block">
                             <strong>5000+</strong>
                             <span>довольных клиентов <br>по России и СНГ</span>
@@ -528,10 +278,202 @@
                 </div>
             </section>
 
+            <section class="services">
+                <div class="container">
+                    <h2 class="services__title section-title">Наши услуги</h2>
+                    <div class="services__items">
+                        <div class="service-card">
+                            <div class="service-card__wrap">
+                                <div class="service-card__top">
+                                    <i class="icon icon-truck"></i>
+                                    <h3 class="service-card__title">
+                                        <a href="#">Автомобильные перевозки</a>
+                                    </h3>
+                                </div>
+                                <p class="service-card__text">
+                                    Перевозка грузов от 1 кг до 120 тонн по всей России и СНГ
+                                </p>
+                                <div class="service-card__btn">
+                                    <a href="#" class="btn --outline">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-card__wrap">
+                                <div class="service-card__top">
+                                    <i class="icon icon-truck"></i>
+                                    <h3 class="service-card__title">
+                                        <a href="#">Сборные грузы</a>
+                                    </h3>
+                                </div>
+                                <p class="service-card__text">
+                                    Экономичная доставка небольших партий грузов от 100 кг
+                                </p>
+                                <div class="service-card__btn">
+                                    <a href="#" class="btn --outline">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-card__wrap">
+                                <div class="service-card__top">
+                                    <i class="icon icon-truck"></i>
+                                    <h3 class="service-card__title">
+                                        <a href="#">Негабаритные перевозкии</a>
+                                    </h3>
+                                </div>
+                                <p class="service-card__text">
+                                    Перевозка негабаритных и тяжеловесных грузов любой сложности
+                                </p>
+                                <div class="service-card__btn">
+                                    <a href="#" class="btn --outline">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-card__wrap">
+                                <div class="service-card__top">
+                                    <i class="icon icon-truck"></i>
+                                    <h3 class="service-card__title">
+                                        <a href="#">Таможенное оформление</a>
+                                    </h3>
+                                </div>
+                                <p class="service-card__text">
+                                    Помощь в оформлении документов и прохождении таможни
+                                </p>
+                                <div class="service-card__btn">
+                                    <a href="#" class="btn --outline">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="how-work">
+                <div class="container">
+                    <h2 class="how-work__title section-title">Как мы работаем</h2>
+                    <div class="how-work__items">
+                        <div class="how-work-item">
+                            <h3 class="how-work-item__title">
+                                <div class="how-work-item__icon">
+                                    <i class="icon icon-chat"></i>
+                                </div>
+                                Название этапа
+                            </h3>
+                            <p class="how-work-item__text">Описание этапа в 2 строки и далее перенос далее</p>
+                        </div>
+                        <div class="how-work-item">
+                            <h3 class="how-work-item__title">
+                                <div class="how-work-item__icon">
+                                    <i class="icon icon-chat"></i>
+                                </div>
+                                Название этапа
+                            </h3>
+                            <p class="how-work-item__text">Описание этапа в 2 строки и далее перенос далее</p>
+                        </div>
+                        <div class="how-work-item">
+                            <h3 class="how-work-item__title">
+                                <div class="how-work-item__icon">
+                                    <i class="icon icon-chat"></i>
+                                </div>
+                                Название этапа
+                            </h3>
+                            <p class="how-work-item__text">Описание этапа в 2 строки и далее перенос далее</p>
+                        </div>
+                        <div class="how-work-item">
+                            <h3 class="how-work-item__title">
+                                <div class="how-work-item__icon">
+                                    <i class="icon icon-chat"></i>
+                                </div>
+                                Название этапа
+                            </h3>
+                            <p class="how-work-item__text">Описание этапа в 2 строки и далее перенос далее</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="team">
+                <div class="container">
+                    <div class="team__top">
+                        <h2 class="team__title section-title">Наша команда</h2>
+                        <div class="team__top-link section-top-link">
+                            <a href="#">Присоединяйтесь к нам!</a>
+                        </div>
+                    </div>
+                    <div class="team__items">
+                        <div class="team-card">
+                            <div class="team-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                            <h3 class="team-card__title">Фамилия Имя</h3>
+                            <p class="team-card__text">
+                                Должность может быть в 2 строки
+                            </p>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                            <h3 class="team-card__title">Фамилия Имя</h3>
+                            <p class="team-card__text">
+                                Должность может быть в 2 строки
+                            </p>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                            <h3 class="team-card__title">Фамилия Имя</h3>
+                            <p class="team-card__text">
+                                Должность может быть в 2 строки
+                            </p>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                            <h3 class="team-card__title">Фамилия Имя</h3>
+                            <p class="team-card__text">
+                                Должность может быть в 2 строки
+                            </p>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                            <h3 class="team-card__title">Фамилия Имя</h3>
+                            <p class="team-card__text">
+                                Должность может быть в 2 строки
+                            </p>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                            <h3 class="team-card__title">Фамилия Имя</h3>
+                            <p class="team-card__text">
+                                Должность может быть в 2 строки
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="our-clients">
+                <div class="container">
+                    <div class="our-clients__top">
+                        <h2 class="our-clients__title section-title">Наши клиенты</h2>
+                        <div class="our-clients__top-link section-top-link">
+                            <a href="#">Смотреть все отзывы</a>
+                        </div>
+                    </div>
+                    <div class="our-clients__items">
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                    </div>
+                </div>
+            </section>
+
             <section class="cases">
                 <div class="container">
                     <div class="cases__top">
-                        <h2 class="cases__title section-title">Наши кейсы</h2>
+                        <h2 class="cases__title section-title">Примеры перевозок</h2>
                         <div class="cases__all-link section-top-link">
                             <a href="#">Все кейсы</a>
                         </div>
@@ -630,71 +572,6 @@
                         </div>
                         <div class="slider-btn cases__next-el">
                             <i class="icon icon-chevron-right"></i>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="how-work">
-                <div class="container">
-                    <h2 class="how-work__title section-title">Как мы работаем</h2>
-                    <div class="how-work__items">
-                        <div class="how-work-item">
-                            <h3 class="how-work-item__title">
-                                <div class="how-work-item__icon">
-                                    <i class="icon icon-chat"></i>
-                                </div>
-                                Название этапа
-                            </h3>
-                            <p class="how-work-item__text">Описание этапа в 2 строки и далее перенос далее</p>
-                        </div>
-                        <div class="how-work-item">
-                            <h3 class="how-work-item__title">
-                                <div class="how-work-item__icon">
-                                    <i class="icon icon-chat"></i>
-                                </div>
-                                Название этапа
-                            </h3>
-                            <p class="how-work-item__text">Описание этапа в 2 строки и далее перенос далее</p>
-                        </div>
-                        <div class="how-work-item">
-                            <h3 class="how-work-item__title">
-                                <div class="how-work-item__icon">
-                                    <i class="icon icon-chat"></i>
-                                </div>
-                                Название этапа
-                            </h3>
-                            <p class="how-work-item__text">Описание этапа в 2 строки и далее перенос далее</p>
-                        </div>
-                        <div class="how-work-item">
-                            <h3 class="how-work-item__title">
-                                <div class="how-work-item__icon">
-                                    <i class="icon icon-chat"></i>
-                                </div>
-                                Название этапа
-                            </h3>
-                            <p class="how-work-item__text">Описание этапа в 2 строки и далее перенос далее</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about">
-                <div class="container">
-                    <div class="about__main">
-                        <div class="about__left">
-                            <h2 class="about__title section-title">О компании</h2>
-                            <div class="about__text">
-                                <p>
-                                    Мы работаем на рынке грузоперевозок более 10 лет и знаем, как важно доставить 
-                                    груз точно <strong>в срок</strong> и без лишних забот. Наша команда профессионалов подберет оптимальное <strong>решение</strong> под ваши задачи и бюджет
-                                    <br><br>
-                                    Собственный <strong>автопарк</strong>, надежные партнеры и современные технологии позволяют нам гарантировать <strong>качество</strong> на каждом этапе перевозки.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="about__image">
-                            <img src="img/placeholder.webp" alt="" width="600" height="250">
                         </div>
                     </div>
 

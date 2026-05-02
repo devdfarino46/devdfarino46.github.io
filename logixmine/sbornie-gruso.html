@@ -181,27 +181,39 @@
         </div>
 
         <main class="page">
-            <div class="hero" style="background-image: url(img/hero/hero-1.webp);">
+            <div class="hero" style="background-image: url(img/hero/hero-3.webp);">
                 <div class="container">
-                    <h1 class="hero__title">Международные грузоперевозки по <strong>России, СНГ и Китаю</strong></h1>
-                    <p class="hero__text">
-                        Надежная доставка любых грузов точно в срок. Оптимальные маршруты и честные цены
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <div class="icon icon-chevron-right"></div>
+                            <li><a href="#">Маршруты</a></li>
+                            <div class="icon icon-chevron-right"></div>
+                            <li><a href="#">Москва - Чита</a></li>
+                            <div class="icon icon-chevron-right"></div>
+                            <li><a href="#">Сборный груз</a></li>
+                        </ul>
+                    </div>
+                    <h1 class="hero__title">Сборные грузоперевозки <br><strong>Москва - Чита</strong></h1>
+                    <p class="hero__subtitle">Экономия до 40% за счет объединения вашего груза с другими отправками</p>
+                    <p class="hero__text --small">
+                        Перевозим сборные грузы от 100 кг до 10 тонн. Регулярные отправки, быстрая доставка от 4 дней.
                     </p>
                     <ul class="hero__list">
                         <li class="hero-litem">
-                            <i class="icon icon-map-outline"></i>
-                            <span>По России, <br>СНГ и Китаю</span>
+                            <i class="icon icon-money"></i>
+                            <span>Экономия до 40%</span>
                         </li>
                         <li class="hero-litem">
-                            <i class="icon icon-delivery"></i>
-                            <span>Доставка <br>от 24 часов</span>
+                            <i class="icon icon-truck"></i>
+                            <span>Регулярные отправки</span>
                         </li>
                         <li class="hero-litem">
                             <i class="icon icon-cargo"></i>
-                            <span>Страхование груза <br>на всех этапах</span>
+                            <span>Отслеживание груза</span>
                         </li>
                         <li class="hero-litem">
-                            <i class="icon icon-user-check"></i>
+                            <i class="icon icon-clock-2"></i>
                             <span>Личный <br>менеджер 24/7</span>
                         </li>
                     </ul>
@@ -234,7 +246,7 @@
                 </div>
             </div>
 
-            <section class="main-form">
+            <section class="main-form --variant-2">
                 <div class="container">
                     <div class="main-form__wrapper">
                         <h2 class="main-form__title">Найдите <strong>транспорт</strong> для перевозки за 1 минуту</h2>
@@ -291,49 +303,187 @@
                                 </div>
                             </div>
                             <div class="main-form__input-col">
-                                <div class="main-form__label">Тип перевозки:</div>
-                                <div class="main-form__selects">
-                                    <div class="input-select main-form__select">
-                                        <input type="radio" name="type" value="1" checked>
-                                        <i class="icon icon-auto"></i>
-                                        <span>Прямое авто</span>
-                                    </div>
-                                    <div class="input-select main-form__select">
-                                        <input type="radio" name="type" value="2">
-                                        <i class="icon icon-cargo-2"></i>
-                                        <span>Сборный груз</span>
-                                    </div>
-                                    <div class="input-select main-form__select">
-                                        <input type="radio" name="type" value="3">
-                                        <i class="icon icon-square-dots"></i>
-                                        <span>Негабарит</span>
-                                    </div>
+                                <div class="main-form__label">Вес груза</div>
+                                <div class="input --light">
+                                    <input type="text" name="cargo" placeholder="Например, 500 кг" autocomplete="off">
+                                    <i class="icon icon-close input__clear"></i>
                                 </div>
                             </div>
                             <div class="main-form__input-col main-form__submit-col">
+                                <div class="main-form__time-note">
+                                    <i class="icon icon-clock"></i>
+                                    Ответим за 15 минут
+                                </div>
                                 <button type="submit" class="btn main-form__submit">
                                     Найти
                                 </button>
                             </div>
                         </form>
-                        <div class="main-form__bottom">
-                            <div class="main-form__bottom-item">
-                                <i class="icon icon-clock"></i>
-                                <span><strong>Ответим за 15 минут</strong> <br>Быстрый расчет стоимости</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="steps-work">
+                <div class="container">
+                    <h2 class="steps-work__title section-title">Как работает сборный груз</h2>
+                    <div class="steps-work__wrapper">
+                        <div class="steps-work__items">
+                            <div class="steps-work-item">
+                                <div class="steps-work-item__top">
+                                    <div class="steps-work-item__num">01</div>
+                                    <p class="steps-work-item__title">Вы сдаете груз на склад</p>
+                                </div>
+                                <p class="steps-work-item__text">
+                                    Привозите груз на наш склад в Москве или оформляем забор от вашего адреса
+                                </p>
                             </div>
-                            <div class="main-form__bottom-item">
-                                <i class="icon icon-bootstrap"></i>
-                                <span><strong>Без обязательств</strong> <br>Консультация бесплатно</span>
+                            <div class="steps-work-item">
+                                <div class="steps-work-item__top">
+                                    <div class="steps-work-item__num">02</div>
+                                    <p class="steps-work-item__title">Мы объединяем с другими грузами</p>
+                                </div>
+                                <p class="steps-work-item__text">
+                                    Консолидируем ваш груз с другими отправками по маршруту Москва - Чита
+                                </p>
                             </div>
-                            <div class="main-form__bottom-item">
-                                <i class="icon icon-doc-star"></i>
-                                <span><strong>Работа по договору</strong> <br>Прозрачные условия</span>
+                            <div class="steps-work-item">
+                                <div class="steps-work-item__top">
+                                    <div class="steps-work-item__num">03</div>
+                                    <p class="steps-work-item__title">Формируем машину и отправляем</p>
+                                </div>
+                                <p class="steps-work-item__text">
+                                    Формируем оптимальный маршрут и загружаем груз в автомобиль
+                                </p>
                             </div>
-                            <div class="main-form__bottom-item">
-                                <i class="icon icon-drone-check"></i>
-                                <span><strong>Доставка точно в срок</strong> <br>Контроль на всеъ этапах</span>
+                            <div class="steps-work-item">
+                                <div class="steps-work-item__top">
+                                    <div class="steps-work-item__num">04</div>
+                                    <p class="steps-work-item__title">Доставляем в Читу</p>
+                                </div>
+                                <p class="steps-work-item__text">
+                                    Доставлием ваш груз на склад в Чите или до двери получателя в удобное время
+                                </p>
                             </div>
                         </div>
+
+                        <div class="sending-types">
+                            <h2 class="sending-types__title section-title">Типы отправки</h2>
+                            <div class="sending-types__items">
+                                <div class="sending-card">
+                                    <div class="sending-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                                    <p class="sending-card__title">Малый груз</p>
+                                    <p class="sending-card__subtitle">от 100 до 500 кг</p>
+                                    <p class="sending-card__text">
+                                        Для небольших товаров, документов, запчастей и других малогабаритных
+                                    </p>
+                                    <div class="sending-card__btn">
+                                        <a href="#" class="btn --outline">Получить расчет</a>
+                                    </div>
+                                </div>
+                                <div class="sending-card">
+                                    <div class="sending-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                                    <p class="sending-card__title">Средний груз</p>
+                                    <p class="sending-card__subtitle">от 500 до 2000 кг</p>
+                                    <p class="sending-card__text">
+                                        Оптимальное решение для интернет-магазинов, компаний и частных клиентов
+                                    </p>
+                                    <div class="sending-card__btn">
+                                        <a href="#" class="btn --outline">Получить расчет</a>
+                                    </div>
+                                </div>
+                                <div class="sending-card">
+                                    <div class="sending-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                                    <p class="sending-card__title">Крупный груз</p>
+                                    <p class="sending-card__subtitle">от 2 до 10 тонн</p>
+                                    <p class="sending-card__text">
+                                        Дли крупного оборудования, материалов и больших партий товаров
+                                    </p>
+                                    <div class="sending-card__btn">
+                                        <a href="#" class="btn --outline">Получить расчет</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calc-form">
+                            <h2 class="calc-form__title">Получите расчет сборного груза</h2>
+                            <p class="calc-form__text">
+                                Оставьте контакты, и мы подготовим для вас оптимальное решение и точную стоимость
+                            </p>
+                            <form action="javascript:void(0);" class="calc-form__form">
+                                <div class="calc-form__inputs">
+                                    <div class="input --light">
+                                        <input type="text" name="name" placeholder="Ваше имя">
+                                        <i class="icon icon-close input__clear"></i>
+                                    </div>
+                                    <div class="input --light">
+                                        <input type="text" name="phone" class="phone-mask" placeholder="+7 (___) ___-__-__">
+                                        <i class="icon icon-close input__clear"></i>
+                                    </div>
+                                    <div class="input --light">
+                                        <input type="text" name="cargo" placeholder="Вес груза (например, 500 кг)">
+                                        <i class="icon icon-close input__clear"></i>
+                                    </div>
+                                    <div class="input --light">
+                                        <input type="text" name="what" placeholder="Что нужно перевезти?">
+                                        <i class="icon icon-close input__clear"></i>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn calc-form__submit">
+                                    Получить расчет
+                                </button>
+                            </form>
+                            <div class="calc-form__list-wrap">
+                                <p class="calc-form__list-label">В услугу входит:</p>
+                                <ul class="calc-form__list">
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        Забор груза по Москве
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        Консолидация на складе
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        Перевозка до Читы
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        Выгрузка на складе или доставка до двери
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        Страхование груза
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        Личный менеджер 24/7
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="our-clients">
+                <div class="container">
+                    <div class="our-clients__top">
+                        <h2 class="our-clients__title section-title">Нам доверяют</h2>
+                        <div class="our-clients__top-link section-top-link">
+                            <a href="#">Смотреть все отзывы</a>
+                        </div>
+                    </div>
+                    <div class="our-clients__items">
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
+                        <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
                     </div>
                 </div>
             </section>
@@ -437,199 +587,129 @@
                     </div>
                 </div>
             </section>
-            
-            <section class="industry">
-                <div class="container">
-                    <h2 class="section-title industry__title">Отрасли, с которыми мы работаем</h2>
-                    <div class="industry__items">
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Производство и оборудование</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Строительство</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Торговля и ритейл</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Автопром</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Сельское хозяйство</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Химическая промышленность</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Пищевое производство</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="industry-item" style="background-image: url(img/placeholder.webp);">
-                            <div class="industry-item__wrap">
-                                <h3 class="industry-item__title">
-                                    <a href="#">Все отрасли</a>
-                                    <i class="icon icon-chevron-right"></i>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="industry__nums">
-                        <div class="num-block">
-                            <strong>5000+</strong>
-                            <span>довольных клиентов <br>по России и СНГ</span>
-                        </div>
-                        <div class="num-block">
-                            <strong>1000+</strong>
-                            <span>единиц собственного и <br>партнерского транспорта</span>
-                        </div>
-                        <div class="num-block">
-                            <strong>100%</strong>
-                            <span>страхование грузов <br>на всех этапах</span>
-                        </div>
-                        <div class="num-block">
-                            <strong>150+</strong>
-                            <span>направлений <br>по всему миру</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section class="cases">
+            <section class="about-with-cases">
                 <div class="container">
-                    <div class="cases__top">
-                        <h2 class="cases__title section-title">Наши кейсы</h2>
-                        <div class="cases__all-link section-top-link">
-                            <a href="#">Все кейсы</a>
+                    <div class="about-with-cases__left">
+                        <h2 class="about-with-cases__title section-title">
+                            Сборные грузоперевозки Москва - Чита
+                        </h2>
+                        <div class="about-with-cases__text">
+                            <p>
+                                Сборные грузоперевозки по маршруту Москва - Чита позволяют существенно снизить стоимость доставки за счет объединения нескольких отравок в одном транспортном средстее. Это оптимальное решение для перевозки небольших партий груза, когда аренда отдельной машины экономически нецелесообразна.
+                                <br><br>
+                                Мы принимаем грузы от 100 кг и обеспечиваем их консолидацию на складе с последующей отправкой в составе сборной машины. Регулярные рейсы позволяют минимизировать сроки доставки и обеспечить стабильность логистики.
+                                <br><br>
+                                Мы работаем как с юридическими, так и с физическими лицами. Предоставляем полный комплекс услуг: забор груза, упаковка, страхование, доставка до склада или двери получателя.
+                            </p>
+                        </div>
+                        <div class="about-with-cases__btn">
+                            <a href="#" class="btn --outline">Читать о нас</a>
                         </div>
                     </div>
-                    <div class="cases__slider">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide case-card">
-                                    <div class="case-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                                    <p class="case-card__tag tag">Производство</p>
-                                    <h3 class="case-card__title">
-                                        Доставка промышленного оборудования в Алматы
-                                    </h3>
-                                    <ul class="case-card__list">
-                                        <li>Вес груза: <strong>12 тонн</strong></li>
-                                        <li>Срок доставки: <strong>4 дня</strong></li>
-                                    </ul>
-                                    <div class="case-card__btn">
-                                        <a href="#" class="btn">Подробнее</a>
+
+                    <div class="cases --in-section">
+                        <div class="cases__top">
+                            <h2 class="cases__title section-title">Наши кейсы</h2>
+                            <div class="cases__all-link section-top-link">
+                                <a href="#">Все кейсы</a>
+                            </div>
+                        </div>
+                        <div class="cases__slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide case-card">
+                                        <div class="case-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                                        <p class="case-card__tag tag">Производство</p>
+                                        <h3 class="case-card__title">
+                                            Доставка промышленного оборудования в Алматы
+                                        </h3>
+                                        <ul class="case-card__list">
+                                            <li>Вес груза: <strong>12 тонн</strong></li>
+                                            <li>Срок доставки: <strong>4 дня</strong></li>
+                                        </ul>
+                                        <div class="case-card__btn">
+                                            <a href="#" class="btn">Подробнее</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide case-card">
-                                    <div class="case-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                                    <p class="case-card__tag tag">Строительство</p>
-                                    <h3 class="case-card__title">
-                                        Поставка строительных материалов в Минск
-                                    </h3>
-                                    <ul class="case-card__list">
-                                        <li>Вес груза: <strong>12 тонн</strong></li>
-                                        <li>Срок доставки: <strong>4 дня</strong></li>
-                                    </ul>
-                                    <div class="case-card__btn">
-                                        <a href="#" class="btn">Подробнее</a>
+                                    <div class="swiper-slide case-card">
+                                        <div class="case-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                                        <p class="case-card__tag tag">Строительство</p>
+                                        <h3 class="case-card__title">
+                                            Поставка строительных материалов в Минск
+                                        </h3>
+                                        <ul class="case-card__list">
+                                            <li>Вес груза: <strong>12 тонн</strong></li>
+                                            <li>Срок доставки: <strong>4 дня</strong></li>
+                                        </ul>
+                                        <div class="case-card__btn">
+                                            <a href="#" class="btn">Подробнее</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide case-card">
-                                    <div class="case-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                                    <p class="case-card__tag tag">Торговля</p>
-                                    <h3 class="case-card__title">
-                                        Сборный груз из Москвы в Казань
-                                    </h3>
-                                    <ul class="case-card__list">
-                                        <li>Вес груза: <strong>12 тонн</strong></li>
-                                        <li>Срок доставки: <strong>4 дня</strong></li>
-                                    </ul>
-                                    <div class="case-card__btn">
-                                        <a href="#" class="btn">Подробнее</a>
+                                    <div class="swiper-slide case-card">
+                                        <div class="case-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                                        <p class="case-card__tag tag">Торговля</p>
+                                        <h3 class="case-card__title">
+                                            Сборный груз из Москвы в Казань
+                                        </h3>
+                                        <ul class="case-card__list">
+                                            <li>Вес груза: <strong>12 тонн</strong></li>
+                                            <li>Срок доставки: <strong>4 дня</strong></li>
+                                        </ul>
+                                        <div class="case-card__btn">
+                                            <a href="#" class="btn">Подробнее</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide case-card">
-                                    <div class="case-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                                    <p class="case-card__tag tag">Негабарит</p>
-                                    <h3 class="case-card__title">
-                                        Перевозка негабаритного груза во Владивосток
-                                    </h3>
-                                    <ul class="case-card__list">
-                                        <li>Вес груза: <strong>12 тонн</strong></li>
-                                        <li>Срок доставки: <strong>4 дня</strong></li>
-                                    </ul>
-                                    <div class="case-card__btn">
-                                        <a href="#" class="btn">Подробнее</a>
+                                    <div class="swiper-slide case-card">
+                                        <div class="case-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                                        <p class="case-card__tag tag">Негабарит</p>
+                                        <h3 class="case-card__title">
+                                            Перевозка негабаритного груза во Владивосток
+                                        </h3>
+                                        <ul class="case-card__list">
+                                            <li>Вес груза: <strong>12 тонн</strong></li>
+                                            <li>Срок доставки: <strong>4 дня</strong></li>
+                                        </ul>
+                                        <div class="case-card__btn">
+                                            <a href="#" class="btn">Подробнее</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide case-card">
-                                    <div class="case-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                                    <p class="case-card__tag tag">Производство</p>
-                                    <h3 class="case-card__title">
-                                        Доставка промышленного оборудования в Алматы
-                                    </h3>
-                                    <ul class="case-card__list">
-                                        <li>Вес груза: <strong>12 тонн</strong></li>
-                                        <li>Срок доставки: <strong>4 дня</strong></li>
-                                    </ul>
-                                    <div class="case-card__btn">
-                                        <a href="#" class="btn">Подробнее</a>
+                                    <div class="swiper-slide case-card">
+                                        <div class="case-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                                        <p class="case-card__tag tag">Производство</p>
+                                        <h3 class="case-card__title">
+                                            Доставка промышленного оборудования в Алматы
+                                        </h3>
+                                        <ul class="case-card__list">
+                                            <li>Вес груза: <strong>12 тонн</strong></li>
+                                            <li>Срок доставки: <strong>4 дня</strong></li>
+                                        </ul>
+                                        <div class="case-card__btn">
+                                            <a href="#" class="btn">Подробнее</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide case-card">
-                                    <div class="case-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                                    <p class="case-card__tag tag">Производство</p>
-                                    <h3 class="case-card__title">
-                                        Доставка промышленного оборудования в Алматы
-                                    </h3>
-                                    <ul class="case-card__list">
-                                        <li>Вес груза: <strong>12 тонн</strong></li>
-                                        <li>Срок доставки: <strong>4 дня</strong></li>
-                                    </ul>
-                                    <div class="case-card__btn">
-                                        <a href="#" class="btn">Подробнее</a>
+                                    <div class="swiper-slide case-card">
+                                        <div class="case-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                                        <p class="case-card__tag tag">Производство</p>
+                                        <h3 class="case-card__title">
+                                            Доставка промышленного оборудования в Алматы
+                                        </h3>
+                                        <ul class="case-card__list">
+                                            <li>Вес груза: <strong>12 тонн</strong></li>
+                                            <li>Срок доставки: <strong>4 дня</strong></li>
+                                        </ul>
+                                        <div class="case-card__btn">
+                                            <a href="#" class="btn">Подробнее</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="slider-btn cases__prev-el">
-                            <i class="icon icon-chevron-left"></i>
-                        </div>
-                        <div class="slider-btn cases__next-el">
-                            <i class="icon icon-chevron-right"></i>
+                            <div class="slider-btn cases__prev-el">
+                                <i class="icon icon-chevron-left"></i>
+                            </div>
+                            <div class="slider-btn cases__next-el">
+                                <i class="icon icon-chevron-right"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -679,22 +759,68 @@
                 </div>
             </section>
 
-            <section class="about">
+            <section class="faq">
                 <div class="container">
-                    <div class="about__main">
-                        <div class="about__left">
-                            <h2 class="about__title section-title">О компании</h2>
-                            <div class="about__text">
-                                <p>
-                                    Мы работаем на рынке грузоперевозок более 10 лет и знаем, как важно доставить 
-                                    груз точно <strong>в срок</strong> и без лишних забот. Наша команда профессионалов подберет оптимальное <strong>решение</strong> под ваши задачи и бюджет
-                                    <br><br>
-                                    Собственный <strong>автопарк</strong>, надежные партнеры и современные технологии позволяют нам гарантировать <strong>качество</strong> на каждом этапе перевозки.
-                                </p>
+                    <h2 class="faq__title section-title">Частые вопросы</h2>
+                    <div class="faq__items">
+                        <div class="faq__items-col">
+                            <div class="faq-item --active">
+                                <h3 class="faq-item__label">
+                                    Сколько стоит сборный груз Москва - Чита?
+                                    <div class="icon icon-chevron-down"></div>
+                                </h3>
+                                <div class="faq-item__dropdown">
+                                    <p class="faq-item__text">
+                                        Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="faq-item__label">
+                                    Какие минимальные объемы для отправки?
+                                    <div class="icon icon-chevron-down"></div>
+                                </h3>
+                                <div class="faq-item__dropdown">
+                                    <p class="faq-item__text">
+                                        Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. 
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="about__image">
-                            <img src="img/placeholder.webp" alt="" width="600" height="250">
+                        <div class="faq__items-col">
+                            <div class="faq-item">
+                                <h3 class="faq-item__label">
+                                    Где находится ваш склад в Москве?
+                                    <div class="icon icon-chevron-down"></div>
+                                </h3>
+                                <div class="faq-item__dropdown">
+                                    <p class="faq-item__text">
+                                        Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="faq-item__label">
+                                    Можно ли заказать доставку до двери?
+                                    <div class="icon icon-chevron-down"></div>
+                                </h3>
+                                <div class="faq-item__dropdown">
+                                    <p class="faq-item__text">
+                                        Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="faq-item__label">
+                                    Как упаковать груз для перевозки?
+                                    <div class="icon icon-chevron-down"></div>
+                                </h3>
+                                <div class="faq-item__dropdown">
+                                    <p class="faq-item__text">
+                                        Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. 
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
