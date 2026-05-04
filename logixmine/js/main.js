@@ -2,6 +2,37 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./ts/ui/cargoTypes.ts"
+/*!*****************************!*\
+  !*** ./ts/ui/cargoTypes.ts ***!
+  \*****************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => document.addEventListener('DOMContentLoaded', () => {
+    const cargoTypes = document.querySelector('.cargo-types');
+    if (!cargoTypes)
+        return;
+    const tabBtns = cargoTypes.querySelectorAll('.cargo-types__tabs .tab-btn');
+    const toggleTabs = function (tabBtn) {
+        tabBtns.forEach(el => el.classList.remove('--active'));
+        tabBtn.classList.add('--active');
+    };
+    cargoTypes.addEventListener('click', ev => {
+        const target = ev.target;
+        const tabBtn = target.closest('.cargo-types__tabs .tab-btn');
+        if (tabBtn) {
+            toggleTabs(tabBtn);
+        }
+    });
+}));
+
+
+/***/ },
+
 /***/ "./ts/ui/cases.ts"
 /*!************************!*\
   !*** ./ts/ui/cases.ts ***!
@@ -37,6 +68,70 @@ __webpack_require__.r(__webpack_exports__);
             993: {
                 spaceBeetween: 20
             }
+        }
+    });
+}));
+
+
+/***/ },
+
+/***/ "./ts/ui/casesCatalog.ts"
+/*!*******************************!*\
+  !*** ./ts/ui/casesCatalog.ts ***!
+  \*******************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => document.addEventListener('DOMContentLoaded', () => {
+    const casesCatalog = document.querySelector('.cases-catalog');
+    if (!casesCatalog)
+        return;
+    const toggleTabBtns = function (tabBtn) {
+        const container = tabBtn.closest('.cases-catalog-top__tabs');
+        if (!container)
+            return;
+        container.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('--active');
+        });
+        tabBtn.classList.add('--active');
+    };
+    const resetFilter = function () {
+        casesCatalog.querySelectorAll('.cases-catalog-top__tabs')
+            .forEach(container => {
+            container.querySelectorAll('.tab-btn')
+                .forEach((btn, index) => {
+                if (index === 0) {
+                    btn.classList.add('--active');
+                }
+                else {
+                    btn.classList.remove('--active');
+                }
+            });
+        });
+    };
+    const togglePagination = function (paginationBtn) {
+        const allBtns = casesCatalog.querySelectorAll('.cases-catalog__pagination .pagination__btn');
+        if (paginationBtn.classList.contains('--clickable')) {
+            allBtns.forEach(el => el.classList.remove('--active'));
+            paginationBtn.classList.add('--active');
+        }
+    };
+    casesCatalog.addEventListener('click', ev => {
+        const target = ev.target;
+        const tabBtn = target.closest('.cases-catalog-top__tabs .tab-btn');
+        const resetBtn = target.closest('.cases-catalog-top__reset-btn');
+        const paginationBtn = target.closest('.cases-catalog__pagination .pagination__btn');
+        if (tabBtn) {
+            toggleTabBtns(tabBtn);
+        }
+        if (resetBtn) {
+            resetFilter();
+        }
+        if (paginationBtn) {
+            togglePagination(paginationBtn);
         }
     });
 }));
@@ -276,13 +371,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _cases__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cases */ "./ts/ui/cases.ts");
-/* harmony import */ var _faq__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./faq */ "./ts/ui/faq.ts");
-/* harmony import */ var _footerLinks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footerLinks */ "./ts/ui/footerLinks.ts");
-/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./header */ "./ts/ui/header.ts");
-/* harmony import */ var _input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./input */ "./ts/ui/input.ts");
-/* harmony import */ var _mobileMenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./mobileMenu */ "./ts/ui/mobileMenu.ts");
-/* harmony import */ var _popularRoutes__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./popularRoutes */ "./ts/ui/popularRoutes.ts");
+/* harmony import */ var _cargoTypes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cargoTypes */ "./ts/ui/cargoTypes.ts");
+/* harmony import */ var _cases__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cases */ "./ts/ui/cases.ts");
+/* harmony import */ var _casesCatalog__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./casesCatalog */ "./ts/ui/casesCatalog.ts");
+/* harmony import */ var _faq__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./faq */ "./ts/ui/faq.ts");
+/* harmony import */ var _footerLinks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footerLinks */ "./ts/ui/footerLinks.ts");
+/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./header */ "./ts/ui/header.ts");
+/* harmony import */ var _input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./input */ "./ts/ui/input.ts");
+/* harmony import */ var _mobileMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./mobileMenu */ "./ts/ui/mobileMenu.ts");
+/* harmony import */ var _popularRoutes__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./popularRoutes */ "./ts/ui/popularRoutes.ts");
+
+
 
 
 
@@ -291,13 +390,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {
-    (0,_input__WEBPACK_IMPORTED_MODULE_4__["default"])();
-    (0,_cases__WEBPACK_IMPORTED_MODULE_0__["default"])();
-    (0,_popularRoutes__WEBPACK_IMPORTED_MODULE_6__["default"])();
-    (0,_header__WEBPACK_IMPORTED_MODULE_3__["default"])();
-    (0,_footerLinks__WEBPACK_IMPORTED_MODULE_2__["default"])();
-    (0,_mobileMenu__WEBPACK_IMPORTED_MODULE_5__["default"])();
-    (0,_faq__WEBPACK_IMPORTED_MODULE_1__["default"])();
+    (0,_input__WEBPACK_IMPORTED_MODULE_6__["default"])();
+    (0,_cases__WEBPACK_IMPORTED_MODULE_1__["default"])();
+    (0,_popularRoutes__WEBPACK_IMPORTED_MODULE_8__["default"])();
+    (0,_header__WEBPACK_IMPORTED_MODULE_5__["default"])();
+    (0,_footerLinks__WEBPACK_IMPORTED_MODULE_4__["default"])();
+    (0,_mobileMenu__WEBPACK_IMPORTED_MODULE_7__["default"])();
+    (0,_faq__WEBPACK_IMPORTED_MODULE_3__["default"])();
+    (0,_cargoTypes__WEBPACK_IMPORTED_MODULE_0__["default"])();
+    (0,_casesCatalog__WEBPACK_IMPORTED_MODULE_2__["default"])();
 });
 
 
