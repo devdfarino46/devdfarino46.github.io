@@ -329,6 +329,54 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ },
 
+/***/ "./ts/ui/ourOffices.ts"
+/*!*****************************!*\
+  !*** ./ts/ui/ourOffices.ts ***!
+  \*****************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => document.addEventListener('DOMContentLoaded', () => {
+    const ourOffices = document.querySelector('.our-offices');
+    if (!ourOffices)
+        return;
+    const tabBtns = ourOffices.querySelectorAll('.our-offices__tab-btn');
+    const tabs = ourOffices.querySelectorAll('.our-offices__tab');
+    const toggleTabs = function (tabBtn) {
+        let currIndex = 0;
+        tabBtns.forEach((btn, index) => {
+            if (tabBtn.contains(btn)) {
+                currIndex = index;
+                btn.classList.add('--active');
+            }
+            else {
+                btn.classList.remove('--active');
+            }
+        });
+        tabs.forEach((tab, index) => {
+            if (index === currIndex) {
+                tab.classList.add('--active');
+            }
+            else {
+                tab.classList.remove('--active');
+            }
+        });
+    };
+    ourOffices.addEventListener('click', ev => {
+        const target = ev.target;
+        const tabBtn = target.closest('.our-offices__tab-btn');
+        if (tabBtn) {
+            toggleTabs(tabBtn);
+        }
+    });
+}));
+
+
+/***/ },
+
 /***/ "./ts/ui/popularRoutes.ts"
 /*!********************************!*\
   !*** ./ts/ui/popularRoutes.ts ***!
@@ -379,7 +427,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./header */ "./ts/ui/header.ts");
 /* harmony import */ var _input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./input */ "./ts/ui/input.ts");
 /* harmony import */ var _mobileMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./mobileMenu */ "./ts/ui/mobileMenu.ts");
-/* harmony import */ var _popularRoutes__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./popularRoutes */ "./ts/ui/popularRoutes.ts");
+/* harmony import */ var _ourOffices__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ourOffices */ "./ts/ui/ourOffices.ts");
+/* harmony import */ var _popularRoutes__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./popularRoutes */ "./ts/ui/popularRoutes.ts");
+
 
 
 
@@ -392,13 +442,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {
     (0,_input__WEBPACK_IMPORTED_MODULE_6__["default"])();
     (0,_cases__WEBPACK_IMPORTED_MODULE_1__["default"])();
-    (0,_popularRoutes__WEBPACK_IMPORTED_MODULE_8__["default"])();
+    (0,_popularRoutes__WEBPACK_IMPORTED_MODULE_9__["default"])();
     (0,_header__WEBPACK_IMPORTED_MODULE_5__["default"])();
     (0,_footerLinks__WEBPACK_IMPORTED_MODULE_4__["default"])();
     (0,_mobileMenu__WEBPACK_IMPORTED_MODULE_7__["default"])();
     (0,_faq__WEBPACK_IMPORTED_MODULE_3__["default"])();
     (0,_cargoTypes__WEBPACK_IMPORTED_MODULE_0__["default"])();
     (0,_casesCatalog__WEBPACK_IMPORTED_MODULE_2__["default"])();
+    (0,_ourOffices__WEBPACK_IMPORTED_MODULE_8__["default"])();
 });
 
 

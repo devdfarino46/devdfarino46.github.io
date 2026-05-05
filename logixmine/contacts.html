@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="libs/css/reset.css">
+    <link rel="stylesheet" href="libs/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css?v=6">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <a href="pages.html" title="На главную">
+                        <img src="img/logo-light.svg" alt="" width="200" height="41">
+                    </a>
+                </div>
+
+                <div class="header-nav header__nav">
+                    <div class="header-nav__item rel">
+                        <p>Услуги</p>
+                        <div class="icon icon-chevron-down"></div>
+
+                        <div class="header-nav-dropdown">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-auto"></i>
+                                        Автоперевозки
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-cargo-2"></i>
+                                        Сборные грузы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-square-dots"></i>
+                                        Негабарит
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-nav__item rel">
+                        <p>Направления</p>
+                        <div class="icon icon-chevron-down"></div>
+
+                        <div class="header-nav-dropdown">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-auto"></i>
+                                        Автоперевозки
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-cargo-2"></i>
+                                        Сборные грузы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-square-dots"></i>
+                                        Негабарит
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-nav__item">
+                        <a href="#">Отрасли</a>
+                    </div>
+                    <div class="header-nav__item">
+                        <a href="#">Кейсы</a>
+                    </div>
+                    <div class="header-nav__item">
+                        <a href="#">О компании</a>
+                    </div>
+                    <div class="header-nav__item">
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+
+                <div class="header__cta">
+                    <div class="header__contacts">
+                        <a href="tel:88001234567">8 (800) 123-45-67</a>
+                        <a href="mailto:info@logixline.com">info@logixline.com</a>
+                    </div>
+                    <div class="btn header__btn">
+                        Обратный звонок
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mobile-menu">
+            <a href="#" class="mobile-menu__logo">
+                <img src="img/logo-dark.svg" alt="" width="150" height="31">
+            </a>
+            <div class="mobile-menu__list-wrap">
+                <ul class="footer-list mobile-menu__list">
+                    <li>
+                        <i class="icon icon-call"></i>
+                        8 (800) 123-45-67
+                    </li>
+                    <li>
+                        <i class="icon icon-mail"></i>
+                        info@logix.ru
+                    </li>
+                    <li>
+                        <i class="icon icon-map"></i>
+                        г. Москва, ул. Логистическая, 1
+                    </li>
+                </ul>
+                <div class="mobile-menu__socials">
+                    <a href="#">
+                        <img src="img/socials/telegram.svg" alt="" width="30" height="30">
+                    </a>
+                    <a href="#">
+                        <img src="img/socials/whatsapp.svg" alt="" width="30" height="30">
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-menu__links">
+                <div class="footer-links --active">
+                    <div class="footer-links__label">Услуги перевозки <i class="icon icon-chevron-down"></i></div>
+                    <ul class="footer-links__list">
+                        <li><a href="#">Автомобильные</a></li>
+                        <li><a href="#">Сборные</a></li>
+                        <li><a href="#">Негабаритные</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links__label">Направления <i class="icon icon-chevron-down"></i></div>
+                    <ul class="footer-links__list">
+                        <li><a href="#">По России</a></li>
+                        <li><a href="#">По СНГ</a></li>
+                        <li><a href="#">Международные</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links__label">Отрасли <i class="icon icon-chevron-down"></i></div>
+                    <ul class="footer-links__list">
+                        <li><a href="#">Промышленность</a></li>
+                        <li><a href="#">Строительство</a></li>
+                        <li><a href="#">Ритейл</a></li>
+                        <li><a href="#">Сельское хозяйство</a></li>
+                        <li><a href="#">Нефть и газ</a></li>
+                        <li><a href="#">Энергетика</a></li>
+                        <li><a href="#">Медицина</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links__label">Компания <i class="icon icon-chevron-down"></i></div>
+                    <ul class="footer-links__list">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile-menu-contact">
+                <div class="mobile-menu-contact__left">
+                    <div class="mobile-menu-contact__title">Мы на связи 24/7</div>
+                    <div class="btn">Обратный звонок</div>
+                </div>
+                <div class="mobile-menu-contact__right">
+                    <div class="mobile-menu-contact__text">Ответим на ваш запрос в течение 15 минут</div>
+                    <div class="mobile-menu-contact__text">Перезвоним в удобное для вас время</div>
+                </div>
+            </div>
+        </div>
+        <div class="burger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        
+
+<main class="page">
+    <div class="hero" style="background-image: url(img/hero/hero-2.webp);">
+        <div class="container">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <div class="icon icon-chevron-right"></div>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <h1 class="hero__title">Контакты LOGIXLINE</h1>
+            <p class="hero__subtitle">Всегда на связи 24/7</p>
+            <p class="hero__text --small">
+                Работаем по России, СНГ и Китаю. <br>Быстрый расчет и консультация по перевозке груза.
+            </p>
+            <ul class="hero__list --one-row">
+                <li class="hero-litem">
+                    <i class="icon icon-cargo"></i>
+                    <span>Работаем без<br>выходных 24/7</span>
+                </li>
+                <li class="hero-litem">
+                    <i class="icon icon-clock"></i>
+                    <span>Быстрый расчет<br>стоимости</span>
+                </li>
+                <li class="hero-litem">
+                    <i class="icon icon-cargo"></i>
+                    <span>Индивидуальный подход<br>к каждому клиенту</span>
+                </li>
+            </ul>
+            <div class="hero__btns-wrap">
+                <div class="hero__btns">
+                    <div class="big-btn">
+                        <i class="icon icon-calc"></i>
+                        <span>
+                            <strong>Рассчитать перевозку</strong><br>
+                            Получите стоимость на 15 минут
+                        </span>
+                    </div>
+                    <div class="big-btn --light-outline" style="border-color: #0DC143;">
+                        <img src="img/socials/whatsapp.svg" alt="" width="40" height="40">
+                        <span>
+                            <strong>Связаться в WhatsApp</strong><br>
+                            Напишите нам в один клик
+                        </span>
+                    </div>
+                </div>
+                <div class="managers">
+                    <div class="managers__images">
+                        <div class="managers__image"><img src="img/managers/3.webp" alt="" width="40" height="40"></div>
+                        <div class="managers__image"><img src="img/managers/2.webp" alt="" width="40" height="40"></div>
+                        <div class="managers__image"><img src="img/managers/1.webp" alt="" width="40" height="40"></div>
+                    </div>
+                    <div class="managers__text">3 менеджера онлайн <br>Ответим за 5-15 минут</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contacts-cards">
+        <div class="container">
+            <div class="contacts-card">
+                <i class="icon icon-call-outline contacts-card__icon"></i>
+                <div class="contacts-card__wrap">
+                    <p class="contacts-card__label">Телефон</p>
+                    <p class="contacts-card__value">8 (800) 123-45-67</p>
+                    <p class="contacts-card__note">Бесплатно по России</p>
+                </div>
+            </div>
+            <div class="contacts-card">
+                <i class="icon icon-mail-outline contacts-card__icon"></i>
+                <div class="contacts-card__wrap">
+                    <p class="contacts-card__label">E-mail</p>
+                    <p class="contacts-card__value">info@logixline.com</p>
+                    <p class="contacts-card__note">Бесплатно по России</p>
+                </div>
+            </div>
+            <div class="contacts-card">
+                <i class="icon icon-clock contacts-card__icon"></i>
+                <div class="contacts-card__wrap">
+                    <p class="contacts-card__label">Режим работы</p>
+                    <p class="contacts-card__value">Пн-Пт: 9:00 - 18:00</p>
+                    <p class="contacts-card__note">Сб-Вс: по говоренности</p>
+                </div>
+            </div>
+            <div class="contacts-card">
+                <i class="icon icon-user-check contacts-card__icon"></i>
+                <div class="contacts-card__wrap">
+                    <p class="contacts-card__label">Поддержка 24/7</p>
+                    <p class="contacts-card__value">На связи 24 часа</p>
+                    <p class="contacts-card__note">7 дней в неделю</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="our-offices">
+        <div class="container">
+            <h2 class="our-offices__title section-title">Наши офисы</h2>
+            <div class="our-offices__tab-btns">
+                                    <div class="our-offices__tab-btn --active">Москва</div>
+                                    <div class="our-offices__tab-btn ">Санкт-Петербург</div>
+                                    <div class="our-offices__tab-btn ">Екатеринбург</div>
+                                    <div class="our-offices__tab-btn ">Новосибирск</div>
+                                    <div class="our-offices__tab-btn ">Алматы</div>
+                                    <div class="our-offices__tab-btn ">Астана</div>
+                                    <div class="our-offices__tab-btn ">Ереван</div>
+                                    <div class="our-offices__tab-btn ">Пекин</div>
+                            </div>
+
+                        <div class="our-offices__tab --active">
+                <div class="office-card">
+                    <p class="office-card__top">
+                        <img src="img/flags/flag-ru.webp" alt="" width="30" height="20">
+                        Россия - Москва
+                    </p>
+                    <p class="office-card__label">Адрес</p>
+                    <p class="office-card__text">
+                        г. Москва, ул. Логистическая, д. 1 <br>
+                        Бизнес-центр «LOGIX», офис 501
+                    </p>
+                    <p class="office-card__label">Телефон</p>
+                    <p class="office-card__text">
+                        8(800) 123-45-67
+                    </p>
+                    <p class="office-card__label">E-mail</p>
+                    <p class="office-card__text">
+                        moscow@logix.ru
+                    </p>
+                    <p class="office-card__label">Режим работы</p>
+                    <p class="office-card__text">
+                        Пн-Пт: 9:00 - 18:00 <br>
+                        Сб-Вс: по договоренности
+                    </p>
+                </div>
+                <div style="position:relative;overflow:hidden;" class="yandex-map"><a href="https://yandex.by/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.by/maps/geo/moskva/53000094/?ll=37.567918%2C55.679411&utm_medium=mapframe&utm_source=maps&z=9.97" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=37.567918%2C55.679411&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.97" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;" loading="lazy"></iframe></div>
+            </div>
+                        <div class="our-offices__tab ">
+                <div class="office-card">
+                    <p class="office-card__top">
+                        <img src="img/flags/flag-ru.webp" alt="" width="30" height="20">
+                        Россия - Санкт-Петербург
+                    </p>
+                    <p class="office-card__label">Адрес</p>
+                    <p class="office-card__text">
+                        г. Москва, ул. Логистическая, д. 1 <br>
+                        Бизнес-центр «LOGIX», офис 501
+                    </p>
+                    <p class="office-card__label">Телефон</p>
+                    <p class="office-card__text">
+                        8(800) 123-45-67
+                    </p>
+                    <p class="office-card__label">E-mail</p>
+                    <p class="office-card__text">
+                        moscow@logix.ru
+                    </p>
+                    <p class="office-card__label">Режим работы</p>
+                    <p class="office-card__text">
+                        Пн-Пт: 9:00 - 18:00 <br>
+                        Сб-Вс: по договоренности
+                    </p>
+                </div>
+                <div style="position:relative;overflow:hidden;" class="yandex-map"><a href="https://yandex.by/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.by/maps/geo/moskva/53000094/?ll=37.567918%2C55.679411&utm_medium=mapframe&utm_source=maps&z=9.97" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=37.567918%2C55.679411&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.97" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;" loading="lazy"></iframe></div>
+            </div>
+                        <div class="our-offices__tab ">
+                <div class="office-card">
+                    <p class="office-card__top">
+                        <img src="img/flags/flag-ru.webp" alt="" width="30" height="20">
+                        Россия - Екатеринбург
+                    </p>
+                    <p class="office-card__label">Адрес</p>
+                    <p class="office-card__text">
+                        г. Москва, ул. Логистическая, д. 1 <br>
+                        Бизнес-центр «LOGIX», офис 501
+                    </p>
+                    <p class="office-card__label">Телефон</p>
+                    <p class="office-card__text">
+                        8(800) 123-45-67
+                    </p>
+                    <p class="office-card__label">E-mail</p>
+                    <p class="office-card__text">
+                        moscow@logix.ru
+                    </p>
+                    <p class="office-card__label">Режим работы</p>
+                    <p class="office-card__text">
+                        Пн-Пт: 9:00 - 18:00 <br>
+                        Сб-Вс: по договоренности
+                    </p>
+                </div>
+                <div style="position:relative;overflow:hidden;" class="yandex-map"><a href="https://yandex.by/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.by/maps/geo/moskva/53000094/?ll=37.567918%2C55.679411&utm_medium=mapframe&utm_source=maps&z=9.97" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=37.567918%2C55.679411&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.97" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;" loading="lazy"></iframe></div>
+            </div>
+                        <div class="our-offices__tab ">
+                <div class="office-card">
+                    <p class="office-card__top">
+                        <img src="img/flags/flag-ru.webp" alt="" width="30" height="20">
+                        Россия - Новосибирск
+                    </p>
+                    <p class="office-card__label">Адрес</p>
+                    <p class="office-card__text">
+                        г. Москва, ул. Логистическая, д. 1 <br>
+                        Бизнес-центр «LOGIX», офис 501
+                    </p>
+                    <p class="office-card__label">Телефон</p>
+                    <p class="office-card__text">
+                        8(800) 123-45-67
+                    </p>
+                    <p class="office-card__label">E-mail</p>
+                    <p class="office-card__text">
+                        moscow@logix.ru
+                    </p>
+                    <p class="office-card__label">Режим работы</p>
+                    <p class="office-card__text">
+                        Пн-Пт: 9:00 - 18:00 <br>
+                        Сб-Вс: по договоренности
+                    </p>
+                </div>
+                <div style="position:relative;overflow:hidden;" class="yandex-map"><a href="https://yandex.by/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.by/maps/geo/moskva/53000094/?ll=37.567918%2C55.679411&utm_medium=mapframe&utm_source=maps&z=9.97" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=37.567918%2C55.679411&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.97" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;" loading="lazy"></iframe></div>
+            </div>
+                        <div class="our-offices__tab ">
+                <div class="office-card">
+                    <p class="office-card__top">
+                        <img src="img/flags/flag-ru.webp" alt="" width="30" height="20">
+                        Россия - Алматы
+                    </p>
+                    <p class="office-card__label">Адрес</p>
+                    <p class="office-card__text">
+                        г. Москва, ул. Логистическая, д. 1 <br>
+                        Бизнес-центр «LOGIX», офис 501
+                    </p>
+                    <p class="office-card__label">Телефон</p>
+                    <p class="office-card__text">
+                        8(800) 123-45-67
+                    </p>
+                    <p class="office-card__label">E-mail</p>
+                    <p class="office-card__text">
+                        moscow@logix.ru
+                    </p>
+                    <p class="office-card__label">Режим работы</p>
+                    <p class="office-card__text">
+                        Пн-Пт: 9:00 - 18:00 <br>
+                        Сб-Вс: по договоренности
+                    </p>
+                </div>
+                <div style="position:relative;overflow:hidden;" class="yandex-map"><a href="https://yandex.by/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.by/maps/geo/moskva/53000094/?ll=37.567918%2C55.679411&utm_medium=mapframe&utm_source=maps&z=9.97" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=37.567918%2C55.679411&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.97" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;" loading="lazy"></iframe></div>
+            </div>
+                        <div class="our-offices__tab ">
+                <div class="office-card">
+                    <p class="office-card__top">
+                        <img src="img/flags/flag-ru.webp" alt="" width="30" height="20">
+                        Россия - Астана
+                    </p>
+                    <p class="office-card__label">Адрес</p>
+                    <p class="office-card__text">
+                        г. Москва, ул. Логистическая, д. 1 <br>
+                        Бизнес-центр «LOGIX», офис 501
+                    </p>
+                    <p class="office-card__label">Телефон</p>
+                    <p class="office-card__text">
+                        8(800) 123-45-67
+                    </p>
+                    <p class="office-card__label">E-mail</p>
+                    <p class="office-card__text">
+                        moscow@logix.ru
+                    </p>
+                    <p class="office-card__label">Режим работы</p>
+                    <p class="office-card__text">
+                        Пн-Пт: 9:00 - 18:00 <br>
+                        Сб-Вс: по договоренности
+                    </p>
+                </div>
+                <div style="position:relative;overflow:hidden;" class="yandex-map"><a href="https://yandex.by/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.by/maps/geo/moskva/53000094/?ll=37.567918%2C55.679411&utm_medium=mapframe&utm_source=maps&z=9.97" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=37.567918%2C55.679411&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.97" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;" loading="lazy"></iframe></div>
+            </div>
+                        <div class="our-offices__tab ">
+                <div class="office-card">
+                    <p class="office-card__top">
+                        <img src="img/flags/flag-ru.webp" alt="" width="30" height="20">
+                        Россия - Ереван
+                    </p>
+                    <p class="office-card__label">Адрес</p>
+                    <p class="office-card__text">
+                        г. Москва, ул. Логистическая, д. 1 <br>
+                        Бизнес-центр «LOGIX», офис 501
+                    </p>
+                    <p class="office-card__label">Телефон</p>
+                    <p class="office-card__text">
+                        8(800) 123-45-67
+                    </p>
+                    <p class="office-card__label">E-mail</p>
+                    <p class="office-card__text">
+                        moscow@logix.ru
+                    </p>
+                    <p class="office-card__label">Режим работы</p>
+                    <p class="office-card__text">
+                        Пн-Пт: 9:00 - 18:00 <br>
+                        Сб-Вс: по договоренности
+                    </p>
+                </div>
+                <div style="position:relative;overflow:hidden;" class="yandex-map"><a href="https://yandex.by/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.by/maps/geo/moskva/53000094/?ll=37.567918%2C55.679411&utm_medium=mapframe&utm_source=maps&z=9.97" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=37.567918%2C55.679411&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.97" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;" loading="lazy"></iframe></div>
+            </div>
+                        <div class="our-offices__tab ">
+                <div class="office-card">
+                    <p class="office-card__top">
+                        <img src="img/flags/flag-ru.webp" alt="" width="30" height="20">
+                        Россия - Пекин
+                    </p>
+                    <p class="office-card__label">Адрес</p>
+                    <p class="office-card__text">
+                        г. Москва, ул. Логистическая, д. 1 <br>
+                        Бизнес-центр «LOGIX», офис 501
+                    </p>
+                    <p class="office-card__label">Телефон</p>
+                    <p class="office-card__text">
+                        8(800) 123-45-67
+                    </p>
+                    <p class="office-card__label">E-mail</p>
+                    <p class="office-card__text">
+                        moscow@logix.ru
+                    </p>
+                    <p class="office-card__label">Режим работы</p>
+                    <p class="office-card__text">
+                        Пн-Пт: 9:00 - 18:00 <br>
+                        Сб-Вс: по договоренности
+                    </p>
+                </div>
+                <div style="position:relative;overflow:hidden;" class="yandex-map"><a href="https://yandex.by/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.by/maps/geo/moskva/53000094/?ll=37.567918%2C55.679411&utm_medium=mapframe&utm_source=maps&z=9.97" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=37.567918%2C55.679411&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.97" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;" loading="lazy"></iframe></div>
+            </div>
+                    </div>
+    </section>
+
+    <div class="contact-form-section">
+        <div class="container">
+            <div class="main-contact-form">
+                <h2 class="main-contact-form__title section-title">Напишите нам</h2>
+                <p class="main-contact-form__text">Оставьте сообщение, и мы свяжемся с вами ближайшее время</p>
+                <form action="javascript:void(0);" class="main-contact-form__form">
+                    <div class="input --light main-contact-form__input">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <i class="icon icon-close input__clear"></i>
+                    </div>
+                    <div class="input --light main-contact-form__input">
+                        <input type="text" name="phone" class="phone-mask" placeholder="+7 (___) ___-__-__">
+                        <i class="icon icon-close input__clear"></i>
+                    </div>
+                    <div class="textarea --light main-contact-form__input">
+                        <textarea name="message" rows="8" placeholder="Сообщение"></textarea>
+                    </div>
+                    <div class="main-contact-form__submit">
+                        <button type="submit" class="btn">Отправить сообщение</button>
+                    </div>
+                </form>
+            </div>
+            <div class="manager-card --outline --medium">
+                <h2 class="manager-card__title">Ваш менеджер</h2>
+                <div class="manager-card__ava-wrap">
+                    <div class="manager-card__ava" style="background-image: url(img/placeholder.webp);"></div>
+                    <div class="manager-card__ava-text-wrap">
+                        <p class="manager-card__name">Владимир Петров</p>
+                        <div class="manager-card__descr">
+                            <p>Логист-эксперт</p>
+                            <p>Опыт работы 10+ лет</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="manager-card__list">
+                    <li>
+                        <i class="icon icon-check"></i>
+                        Подберу оптимальный маршрут
+                    </li>
+                    <li>
+                        <i class="icon icon-check"></i>
+                        Рассчитаю стоимость
+                    </li>
+                    <li>
+                        <i class="icon icon-check"></i>
+                        Проконсультирую по всем вопросам
+                    </li>
+                </ul>
+                <ul class="manager-card__contacts">
+                    <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+                    <li><a href="mailto:v.petrov@logixline.com">v.petrov@logixline.com</a></li>
+                </ul>
+                <div class="manager-card__online">Сейчас онлайн</div>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-main">
+        <div class="container">
+            <div class="about-main__left">
+                <h2 class="about-main__title section-title">О компании</h2>
+                <div class="about-main__text">
+                    Компания LOGIX специализируется на автомобильных грузоперевозках по России, странам СНГ и Китаю. Мы организуем доставку грузов любой сложности: от сборных отправок до негабаритных перевозок
+                    <br><br>
+                    За годы работы мы выстроили надежную логистическую сеть и наладили сотрудничество с проверенными перевозчиками, что позволяет нам гарантировать стабильные сроки доставки и безопасность груза
+                </div>
+                <!-- <div class="about-main__btn">
+                    <a href="#" class="btn">
+                        Подробнее
+                    </a>
+                </div> -->
+            </div>
+            <div class="about-main__nums">
+                <div class="num-block">
+                    <strong>5000+</strong>
+                    <span>довольных клиентов <br>по России и СНГ</span>
+                </div>
+                <div class="num-block">
+                    <strong>1000+</strong>
+                    <span>единиц собственного и <br>партнерского транспорта</span>
+                </div>
+                <div class="num-block">
+                    <strong>100%</strong>
+                    <span>страхование грузов <br>на всех этапах</span>
+                </div>
+                <div class="num-block">
+                    <strong>150+</strong>
+                    <span>направлений <br>по всему миру</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="faq__title section-title">Частые вопросы</h2>
+            <div class="faq__items">
+                <div class="faq__items-col">
+                    <div class="faq-item --active">
+                        <h3 class="faq-item__label">
+                            Сколько стоит сборный груз Москва - Чита?
+                            <div class="icon icon-chevron-down"></div>
+                        </h3>
+                        <div class="faq-item__dropdown">
+                            <p class="faq-item__text">
+                                Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-item__label">
+                            Какие минимальные объемы для отправки?
+                            <div class="icon icon-chevron-down"></div>
+                        </h3>
+                        <div class="faq-item__dropdown">
+                            <p class="faq-item__text">
+                                Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__items-col">
+                    <div class="faq-item">
+                        <h3 class="faq-item__label">
+                            Где находится ваш склад в Москве?
+                            <div class="icon icon-chevron-down"></div>
+                        </h3>
+                        <div class="faq-item__dropdown">
+                            <p class="faq-item__text">
+                                Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-item__label">
+                            Можно ли заказать доставку до двери?
+                            <div class="icon icon-chevron-down"></div>
+                        </h3>
+                        <div class="faq-item__dropdown">
+                            <p class="faq-item__text">
+                                Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-item__label">
+                            Как упаковать груз для перевозки?
+                            <div class="icon icon-chevron-down"></div>
+                        </h3>
+                        <div class="faq-item__dropdown">
+                            <p class="faq-item__text">
+                                Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. Ответ на вопрос, может быть длинным. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <div class="contact-form__top">
+                    <h2 class="contact-form__title">Не нашли подходящий маршрут?</h2>
+                    <p class="contact-form__note">
+                        <i class="icon icon-clock"></i>
+                        Перезвоним через 15 минут
+                    </p>
+                </div>
+                <div class="contact-form__bottom">
+                    <p class="contact-form__text">
+                        Оставьте заявку, и мы подберем оптимальное решение за 15 минут
+                    </p>
+                    <form action="javascript:void(0);" class="contact-form__form">
+                        <div class="input">
+                            <input type="text" name="name" placeholder="Ваше имя">
+                            <i class="icon icon-close input__clear"></i>
+                        </div>
+                        <div class="input --phone">
+                            <input type="tel" name="phone" class="phone-mask" placeholder="+7 (___) ___-__-__">
+                            <i class="icon icon-close input__clear"></i>
+                        </div>
+                        <button type="submit" class="btn">
+                            Получить расчет
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__main">
+                    <div class="footer__main-col">
+                        <div class="footer__logo">
+                            <a href="#" title="На главную">
+                                <img src="img/logo-dark.svg" alt="" width="300" height="62">
+                            </a>
+                        </div>
+                        <ul class="footer-list footer__list">
+                            <li>
+                                <i class="icon icon-call"></i>
+                                8 (800) 123-45-67
+                            </li>
+                            <li>
+                                <i class="icon icon-mail"></i>
+                                info@logix.ru
+                            </li>
+                            <li>
+                                <i class="icon icon-map"></i>
+                                г. Москва, ул. Логистическая, 1
+                            </li>
+                        </ul>
+                        <div class="footer__socials">
+                            <a href="#">
+                                <img src="img/socials/telegram.svg" alt="" width="40" height="40">
+                            </a>
+                            <a href="#">
+                                <img src="img/socials/whatsapp.svg" alt="" width="40" height="40">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__links-wrap">
+                        <div class="footer-links --active">
+                            <div class="footer-links__label">Услуги перевозки <i class="icon icon-chevron-down"></i></div>
+                            <ul class="footer-links__list">
+                                <li><a href="#">Автомобильные</a></li>
+                                <li><a href="#">Сборные</a></li>
+                                <li><a href="#">Негабаритные</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <div class="footer-links__label">Направления <i class="icon icon-chevron-down"></i></div>
+                            <ul class="footer-links__list">
+                                <li><a href="#">По России</a></li>
+                                <li><a href="#">По СНГ</a></li>
+                                <li><a href="#">Международные</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <div class="footer-links__label">Отрасли <i class="icon icon-chevron-down"></i></div>
+                            <ul class="footer-links__list">
+                                <li><a href="#">Промышленность</a></li>
+                                <li><a href="#">Строительство</a></li>
+                                <li><a href="#">Ритейл</a></li>
+                                <li><a href="#">Сельское хозяйство</a></li>
+                                <li><a href="#">Нефть и газ</a></li>
+                                <li><a href="#">Энергетика</a></li>
+                                <li><a href="#">Медицина</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <div class="footer-links__label">Компания <i class="icon icon-chevron-down"></i></div>
+                            <ul class="footer-links__list">
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="footer-contact__title">Мы на связи 24/7</div>
+                        <div class="footer-contact__text">Ответим на ваш запрос в течение 15 минут</div>
+                        <div class="btn">Обратный звонок</div>
+                        <div class="footer-contact__text">Перезвоним в удобное для вас время</div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>© 2026 LogixLine. Все права защищены</p>
+                    <p><a href="#">Политика конфиденциальности</a></p>
+                    <p><a href="#">Пользовательское соглашение</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="libs/js/swiper-bundle.min.js"></script>
+    <script src="libs/js/imask.min.js"></script>
+    <script src="js/main.js?v=6"></script>
+</body>
+</html>
