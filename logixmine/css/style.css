@@ -231,10 +231,13 @@ body {
 }
 .section-top-link a {
   color: currentColor;
-  text-decoration: transparent underline;
   transition: 0.2s ease text-decoration;
+  text-decoration: none;
 }
 @media (any-hover: hover) {
+  .section-top-link a {
+    text-decoration: underline transparent;
+  }
   .section-top-link a:hover {
     text-decoration-color: currentColor;
   }
@@ -641,11 +644,14 @@ body {
   cursor: pointer;
 }
 .header-nav__item > a {
-  text-decoration: transparent underline;
   color: inherit;
   transition: 0.2s ease text-decoration;
+  text-decoration: none;
 }
 @media (any-hover: hover) {
+  .header-nav__item > a {
+    text-decoration: underline transparent;
+  }
   .header-nav__item > a:hover {
     text-decoration-color: currentColor;
   }
@@ -1185,11 +1191,14 @@ body {
   border-top: 1px solid #808D9C;
 }
 .footer__bottom a {
-  text-decoration: transparent underline;
   color: currentColor;
-  transition: 0.2s ease text-decoration;
+  text-decoration: none;
+  transition: 0.2s ease;
 }
 @media (any-hover: hover) {
+  .footer__bottom a {
+    text-decoration: underline transparent;
+  }
   .footer__bottom a:hover {
     text-decoration-color: currentColor;
   }
@@ -1252,10 +1261,13 @@ body {
 }
 .footer-links__list a {
   color: currentColor;
-  text-decoration: transparent underline;
+  text-decoration: none;
   transition: 0.2s ease;
 }
 @media (any-hover: hover) {
+  .footer-links__list a {
+    text-decoration: underline transparent;
+  }
   .footer-links__list a:hover {
     text-decoration-color: currentColor;
   }
@@ -2225,11 +2237,14 @@ body {
   color: #031C3B;
 }
 .header__contacts a {
-  text-decoration: underline transparent;
   color: inherit;
   transition: 0.2s ease text-decoration;
+  text-decoration: none;
 }
 @media (any-hover: hover) {
+  .header__contacts a {
+    text-decoration: underline transparent;
+  }
   .header__contacts a:hover {
     text-decoration-color: currentColor;
   }
@@ -2665,10 +2680,13 @@ body {
   line-height: 1.4;
   color: #808D9C;
   display: block;
-  text-decoration: underline transparent;
+  text-decoration: none;
   transition: 0.2s ease;
 }
 @media (any-hover: hover) {
+  .breadcrumbs ul li a {
+    text-decoration: underline transparent;
+  }
   .breadcrumbs ul li a:hover {
     text-decoration-color: currentColor;
   }
@@ -3867,11 +3885,14 @@ body {
   align-self: center;
   cursor: pointer;
   user-select: none;
-  text-decoration: underline transparent;
   transition: 0.3s ease;
   margin-bottom: 15px;
+  text-decoration: none;
 }
 @media (any-hover: hover) {
+  .cases-catalog__show-more {
+    text-decoration: underline transparent;
+  }
   .cases-catalog__show-more:hover {
     text-decoration-color: currentColor;
   }
@@ -4441,10 +4462,13 @@ body {
 }
 .manager-card__contacts li a {
   color: inherit;
-  text-decoration: underline transparent;
   transition: 0.2s ease text-decoration;
+  text-decoration: none;
 }
 @media (any-hover: hover) {
+  .manager-card__contacts li a {
+    text-decoration: underline transparent;
+  }
   .manager-card__contacts li a:hover {
     text-decoration-color: currentColor;
   }
@@ -4937,10 +4961,13 @@ body {
 }
 .cargo-card__more-link a {
   color: inherit;
-  text-decoration: transparent underline;
-  transition: 0.2s ease text-decoration;
+  text-decoration: none;
+  transition: 0.2s ease;
 }
 @media (any-hover: hover) {
+  .cargo-card__more-link a {
+    text-decoration: underline transparent;
+  }
   .cargo-card__more-link a:hover {
     text-decoration-color: currentColor;
   }
