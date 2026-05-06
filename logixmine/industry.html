@@ -183,36 +183,33 @@
         
         
 <main class="page">
-    <div class="hero" style="background-image: url(img/hero/hero-2.webp);">
+    <div class="hero" style="background-image: url(img/hero/hero-industry.webp);">
         <div class="container">
             <div class="breadcrumbs">
                 <ul>
-                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Главная</a></li>
                     <div class="icon icon-chevron-right"></div>
-                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="#">Отрасли</a></li>
+                    <div class="icon icon-chevron-right"></div>
+                    <li><a href="#">Перевозка продуктов питания</a></li>
                 </ul>
             </div>
-            <h1 class="hero__title">О компании LogixLine</h1>
-            <p class="hero__subtitle">Международные грузоперевозки по России, СНГ и Китаю. Более 10 лет на рынке</p>
+            <h1 class="hero__title">Перевозка продуктов питания</h1>
             <p class="hero__text --small">
-                Мы создаем логистические решения, которые помогают бизнесу развиваться. Берем на себя сложные задачи и доставляем грузы точно в срок, в любую точку маршрута.
+                Надежная и быстрая доставка продуктов питания по России, СНГ и Китаю с соблюдением всех требований к температурному режиму и безопасности.
             </p>
-            <ul class="hero__list">
+            <ul class="hero__list --one-row">
                 <li class="hero-litem">
                     <i class="icon icon-map-outline"></i>
-                    <span>По России, <br>СНГ и Китаю</span>
+                    <span>Соблюдение<br>температурного режима</span>
                 </li>
                 <li class="hero-litem">
                     <i class="icon icon-delivery"></i>
-                    <span>Доставка <br>от 24 часов</span>
+                    <span>Санитарные<br>требования</span>
                 </li>
                 <li class="hero-litem">
                     <i class="icon icon-cargo"></i>
-                    <span>Страхование груза <br>на всех этапах</span>
-                </li>
-                <li class="hero-litem">
-                    <i class="icon icon-user-check"></i>
-                    <span>Личный <br>менеджер 24/7</span>
+                    <span>Доставка<br>точно в срок</span>
                 </li>
             </ul>
             <div class="hero__btns-wrap">
@@ -243,23 +240,10 @@
             </div>
         </div>
     </div>
-
-    <section class="about-main">
+    
+    <div class="nums-section">
         <div class="container">
-            <div class="about-main__left">
-                <h2 class="about-main__title section-title">О компании</h2>
-                <div class="about-main__text">
-                    Компания LOGIX специализируется на автомобильных грузоперевозках по России, странам СНГ и Китаю. Мы организуем доставку грузов любой сложности: от сборных отправок до негабаритных перевозок
-                    <br><br>
-                    За годы работы мы выстроили надежную логистическую сеть и наладили сотрудничество с проверенными перевозчиками, что позволяет нам гарантировать стабильные сроки доставки и безопасность груза
-                </div>
-                <!-- <div class="about-main__btn">
-                    <a href="#" class="btn">
-                        Подробнее
-                    </a>
-                </div> -->
-            </div>
-            <div class="about-main__nums">
+            <div class="nums-section__wrapper">
                 <div class="num-block">
                     <strong>5000+</strong>
                     <span>довольных клиентов <br>по России и СНГ</span>
@@ -278,73 +262,81 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="services">
+    <section class="cargo-cards-section">
         <div class="container">
-            <h2 class="services__title section-title">Наши услуги</h2>
-            <div class="services__items">
-                <div class="service-card">
-                    <div class="service-card__wrap">
-                        <div class="service-card__top">
-                            <i class="icon icon-truck"></i>
-                            <h3 class="service-card__title">
-                                <a href="#">Автомобильные перевозки</a>
-                            </h3>
-                        </div>
-                        <p class="service-card__text">
-                            Перевозка грузов от 1 кг до 120 тонн по всей России и СНГ
+            <h2 class="cargo-cards-section__title section-title">Какие продукты мы перевозим</h2>
+            <div class="cargo-cards-section__cards">
+                <div class="cargo-card">
+                    <div class="cargo-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                    <div class="cargo-card__content">
+                        <p class="cargo-card__title">Промышленное оборудование</p>
+                        <p class="cargo-card__text">
+                            Станки, котлы, прессы, генераторы, турбины
                         </p>
-                        <div class="service-card__btn">
-                            <a href="#" class="btn --outline">Подробнее</a>
+                        <div class="cargo-card__more-link">
+                            <a href="#">Подробнее</a>
                         </div>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-card__wrap">
-                        <div class="service-card__top">
-                            <i class="icon icon-truck"></i>
-                            <h3 class="service-card__title">
-                                <a href="#">Сборные грузы</a>
-                            </h3>
-                        </div>
-                        <p class="service-card__text">
-                            Экономичная доставка небольших партий грузов от 100 кг
+                <div class="cargo-card">
+                    <div class="cargo-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                    <div class="cargo-card__content">
+                        <p class="cargo-card__title">Строительная техника</p>
+                        <p class="cargo-card__text">
+                            Экскаваторы, бульдозеры, краны, буровые установкы
                         </p>
-                        <div class="service-card__btn">
-                            <a href="#" class="btn --outline">Подробнее</a>
+                        <div class="cargo-card__more-link">
+                            <a href="#">Подробнее</a>
                         </div>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-card__wrap">
-                        <div class="service-card__top">
-                            <i class="icon icon-truck"></i>
-                            <h3 class="service-card__title">
-                                <a href="#">Негабаритные перевозкии</a>
-                            </h3>
-                        </div>
-                        <p class="service-card__text">
-                            Перевозка негабаритных и тяжеловесных грузов любой сложности
+                <div class="cargo-card">
+                    <div class="cargo-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                    <div class="cargo-card__content">
+                        <p class="cargo-card__title">Конструкции и изделия</p>
+                        <p class="cargo-card__text">
+                            Балки, фермы, колонны, резервуары, емкости
                         </p>
-                        <div class="service-card__btn">
-                            <a href="#" class="btn --outline">Подробнее</a>
+                        <div class="cargo-card__more-link">
+                            <a href="#">Подробнее</a>
                         </div>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-card__wrap">
-                        <div class="service-card__top">
-                            <i class="icon icon-truck"></i>
-                            <h3 class="service-card__title">
-                                <a href="#">Таможенное оформление</a>
-                            </h3>
-                        </div>
-                        <p class="service-card__text">
-                            Помощь в оформлении документов и прохождении таможни
+                <div class="cargo-card">
+                    <div class="cargo-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                    <div class="cargo-card__content">
+                        <p class="cargo-card__title">Негабаритные конструкции</p>
+                        <p class="cargo-card__text">
+                            Модули, блок-боксы, элементы зданий
                         </p>
-                        <div class="service-card__btn">
-                            <a href="#" class="btn --outline">Подробнее</a>
+                        <div class="cargo-card__more-link">
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cargo-card">
+                    <div class="cargo-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                    <div class="cargo-card__content">
+                        <p class="cargo-card__title">Промышленное оборудование</p>
+                        <p class="cargo-card__text">
+                            Станки, котлы, прессы, генераторы, турбины
+                        </p>
+                        <div class="cargo-card__more-link">
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cargo-card">
+                    <div class="cargo-card__image" style="background-image: url(img/placeholder.webp);"></div>
+                    <div class="cargo-card__content">
+                        <p class="cargo-card__title">Строительная техника</p>
+                        <p class="cargo-card__text">
+                            Экскаваторы, бульдозеры, краны, буровые установкы
+                        </p>
+                        <div class="cargo-card__more-link">
+                            <a href="#">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -352,122 +344,46 @@
         </div>
     </section>
 
-    <section class="how-work">
+    <section class="trust-features">
         <div class="container">
-            <h2 class="how-work__title section-title">Как мы работаем</h2>
-            <div class="how-work__items">
-                <div class="how-work-item">
-                    <h3 class="how-work-item__title">
-                        <div class="how-work-item__icon">
-                            <i class="icon icon-chat"></i>
-                        </div>
-                        Название этапа
-                    </h3>
-                    <p class="how-work-item__text">Описание этапа в 2 строки и далее перенос далее</p>
-                </div>
-                <div class="how-work-item">
-                    <h3 class="how-work-item__title">
-                        <div class="how-work-item__icon">
-                            <i class="icon icon-chat"></i>
-                        </div>
-                        Название этапа
-                    </h3>
-                    <p class="how-work-item__text">Описание этапа в 2 строки и далее перенос далее</p>
-                </div>
-                <div class="how-work-item">
-                    <h3 class="how-work-item__title">
-                        <div class="how-work-item__icon">
-                            <i class="icon icon-chat"></i>
-                        </div>
-                        Название этапа
-                    </h3>
-                    <p class="how-work-item__text">Описание этапа в 2 строки и далее перенос далее</p>
-                </div>
-                <div class="how-work-item">
-                    <h3 class="how-work-item__title">
-                        <div class="how-work-item__icon">
-                            <i class="icon icon-chat"></i>
-                        </div>
-                        Название этапа
-                    </h3>
-                    <p class="how-work-item__text">Описание этапа в 2 строки и далее перенос далее</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="team">
-        <div class="container">
-            <div class="team__top">
-                <h2 class="team__title section-title">Наша команда</h2>
-                <div class="team__top-link section-top-link">
-                    <a href="#">Присоединяйтесь к нам!</a>
-                </div>
-            </div>
-            <div class="team__items">
-                <div class="team-card">
-                    <div class="team-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                    <h3 class="team-card__title">Фамилия Имя</h3>
-                    <p class="team-card__text">
-                        Должность может быть в 2 строки
+            <h2 class="trust-features__title section-title">Почему нам доверяют перевозку продуктов</h2>
+            <div class="trust-features__cards">
+                <div class="feature-card">
+                    <p class="feature-card__title">
+                        <i class="icon icon-temperature"></i>
+                        Температурный контроль
+                    </p>
+                    <p class="feature-card__text">
+                        Поддерживаем заданный температурный режим
                     </p>
                 </div>
-                <div class="team-card">
-                    <div class="team-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                    <h3 class="team-card__title">Фамилия Имя</h3>
-                    <p class="team-card__text">
-                        Должность может быть в 2 строки
+                <div class="feature-card">
+                    <p class="feature-card__title">
+                        <i class="icon icon-truck-3"></i>
+                        Специализированный транспорт
+                    </p>
+                    <p class="feature-card__text">
+                        Рефрижераторы и изотермы с современным оборудованием
                     </p>
                 </div>
-                <div class="team-card">
-                    <div class="team-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                    <h3 class="team-card__title">Фамилия Имя</h3>
-                    <p class="team-card__text">
-                        Должность может быть в 2 строки
+                <div class="feature-card">
+                    <p class="feature-card__title">
+                        <i class="icon icon-clock-2"></i>
+                        Соблюдение согласованных сроков
+                    </p>
+                    <p class="feature-card__text">
+                        Доставляем точно в срок даже в отдаленные регионы
                     </p>
                 </div>
-                <div class="team-card">
-                    <div class="team-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                    <h3 class="team-card__title">Фамилия Имя</h3>
-                    <p class="team-card__text">
-                        Должность может быть в 2 строки
+                <div class="feature-card">
+                    <p class="feature-card__title">
+                        <i class="icon icon-doc"></i>
+                        Документы и сертификация
+                    </p>
+                    <p class="feature-card__text">
+                        Оформляем все необходимые документы и сертификаты
                     </p>
                 </div>
-                <div class="team-card">
-                    <div class="team-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                    <h3 class="team-card__title">Фамилия Имя</h3>
-                    <p class="team-card__text">
-                        Должность может быть в 2 строки
-                    </p>
-                </div>
-                <div class="team-card">
-                    <div class="team-card__image" style="background-image: url(img/placeholder.webp);"></div>
-                    <h3 class="team-card__title">Фамилия Имя</h3>
-                    <p class="team-card__text">
-                        Должность может быть в 2 строки
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="our-clients">
-        <div class="container">
-            <div class="our-clients__top">
-                <h2 class="our-clients__title section-title">Наши клиенты</h2>
-                <div class="our-clients__top-link section-top-link">
-                    <a href="#">Смотреть все отзывы</a>
-                </div>
-            </div>
-            <div class="our-clients__items">
-                <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
-                <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
-                <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
-                <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
-                <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
-                <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
-                <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
-                <div class="our-clients__item" style="background-image: url(img/placeholder.webp);"></div>
             </div>
         </div>
     </section>
@@ -475,7 +391,7 @@
     <section class="cases">
         <div class="container">
             <div class="cases__top">
-                <h2 class="cases__title section-title">Примеры перевозок</h2>
+                <h2 class="cases__title section-title">Похожие кейсы</h2>
                 <div class="cases__all-link section-top-link">
                     <a href="#">Все кейсы</a>
                 </div>
@@ -576,7 +492,79 @@
                     <i class="icon icon-chevron-right"></i>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section class="about-routes">
+        <div class="container">
+            <div class="about-routes__left">
+                <h2 class="about-routes__title section-title">Грузоперевозки фура 20 тонн Москва - Чита</h2>
+                <div class="about-routes__text">
+                    <p>
+                        Перевозки фурой 20 тони по маршруту Москва - Чита - это надежное решение для транспортировки крупных партий грузов, Мы используем современные тягачи и полуприцепы, которые соответствуют всем требованиим безопасности и позволяют доставлять различные виды грузов: от промышленного оборудования и строительных материалов до товаров народного потребления и продуктов питания.
+                        <br><br>
+                        Маршрут проходит по федеральным трасзам М-7 «Волган и Р-258 «Байкал», что обеспечивает стабильные сроки доставки. В среднем перевозка занимает от 4 до 7 дней в зависимости от типа група, погодных условий и загруженности дорог. Мы обеспечиваем контроль груза на всем пути следования и оперативное информирование клиента.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-list">
+                <h2 class="section-title about-list__title">Преимущества перевозки 20 тонн</h2>
+                <ul class="about-list__list">
+                    <li>
+                        <i class="icon icon-check"></i>
+                        Оптимальный объем для больших партий груза
+                    </li>
+                    <li>
+                        <i class="icon icon-check"></i>
+                        Профессиональные водители
+                    </li>
+                    <li>
+                        <i class="icon icon-check"></i>
+                        Фиксированные сроки доставки
+                    </li>
+                    <li>
+                        <i class="icon icon-check"></i>
+                        Страхование и ответственность
+                    </li>
+                    <li>
+                        <i class="icon icon-check"></i>
+                        Современный автопарк
+                    </li>
+                    <li>
+                        <i class="icon icon-check"></i>
+                        Работаем по договору
+                    </li>
+                </ul>
+
+                <h2 class="section-title about-list__title">Какие грузы мы перевозим</h2>
+                <ul class="about-list__list">
+                    <li>
+                        <i class="icon icon-cargo"></i>
+                        Строительные материалы
+                    </li>
+                    <li>
+                        <i class="icon icon-cargo"></i>
+                        Продукты питания (рефрижератор)
+                    </li>
+                    <li>
+                        <i class="icon icon-cargo"></i>
+                        Промышленное оборудование
+                    </li>
+                    <li>
+                        <i class="icon icon-cargo"></i>
+                        Сборные грузы
+                    </li>
+                    <li>
+                        <i class="icon icon-cargo"></i>
+                        Товары народного потребления
+                    </li>
+                    <li>
+                        <i class="icon icon-cargo"></i>
+                        Негабаритные грузы
+                    </li>
+                </ul>
+            </div>
             <div class="contact-form">
                 <div class="contact-form__top">
                     <h2 class="contact-form__title">Не нашли подходящий маршрут?</h2>
@@ -604,7 +592,6 @@
                     </form>
                 </div>
             </div>
-        </div>
     </section>
 </main>
 
